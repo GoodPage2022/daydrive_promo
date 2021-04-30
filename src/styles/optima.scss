@@ -1,0 +1,38 @@
+@import './variables.scss';
+
+@font-face {
+	font-weight: $fw-400;
+	font-family: $font-family-optima;
+	font-style: normal;
+	src: url('/fonts/optima/Optima.eot');
+	src: local('Optima Cyr'), local('Optima'), url('/fonts/optima/Optima.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/optima/Optima.woff') format('woff'), url('/fonts/optima/Optima.ttf') format('truetype');
+}
+
+@font-face {
+	font-weight: $fw-700;
+	font-family: $font-family-optima;
+	font-style: italic;
+	src: url('/fonts/optima/AGOptimaBoldItalic.eot');
+	src: local('Optima Bold Italic'), local('AGOptimaBoldItalic'),
+		url('/fonts/optima/AGOptimaBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/optima/AGOptimaBoldItalic.woff') format('woff'), url('/fonts/optima/AGOptimaBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-weight: $fw-400;
+	font-family: $font-family-optima;
+	font-style: italic;
+	src: url('/fonts/optima/Optima-Italic.eot');
+	src: local('Optima Italic'), local('Optima-Italic'), url('/fonts/optima/Optima-Italic.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/optima/Optima-Italic.woff') format('woff'), url('/fonts/optima/Optima-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-weight: $fw-700;
+	font-family: $font-family-optima;
+	font-style: normal;
+	src: url('/fonts/optima/Optima-Bold.eot');
+	src: local('Optima Bold'), local('Optima-Bold'), url('/fonts/optima/Optima-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/optima/Optima-Bold.woff') format('woff'), url('/fonts/optima/Optima-Bold.ttf') format('truetype');
+}
