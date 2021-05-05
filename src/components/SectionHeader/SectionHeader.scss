@@ -1,0 +1,16 @@
+.section-header {
+	position: relative;
+	color: $dark-grayish-blue-color;
+	font-weight: $fw-700;
+	font-size: $fs-25;
+	line-height: 135%;
+	text-transform: uppercase;
+	&::before {
+		position: absolute;
+		bottom: -10px;
+		width: 40px;
+		height: 2px;
+		background-color: $strong-cyan-color;
+		content: '';
+	}
+}
