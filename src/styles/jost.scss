@@ -1,0 +1,81 @@
+@import '../styles/variables.scss';
+
+@font-face {
+	font-weight: $fw-200;
+	font-family: $font-family-jost;
+	font-style: normal;
+	src: url('/fonts/jost/Jost-ExtraLight.eot');
+	src: url('/fonts/jost/Jost-ExtraLight.eot?#iefix') format('embedded-opentype'), url('/fonts/jost/Jost-ExtraLight.woff2') format('woff2'),
+		url('/fonts/jost/Jost-ExtraLight.woff') format('woff'), url('/fonts/jost/Jost-ExtraLight.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-900;
+	font-family: $font-family-jost;
+	font-style: normal;
+	src: url('/fonts/jost/Jost-ExtraBold.eot');
+	src: url('/fonts/jost/Jost-ExtraBold.eot?#iefix') format('embedded-opentype'), url('/fonts/jost/Jost-ExtraBold.woff2') format('woff2'),
+		url('/fonts/jost/Jost-ExtraBold.woff') format('woff'), url('/fonts/jost/Jost-ExtraBold.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-700;
+	font-family: $font-family-jost;
+	font-style: normal;
+	src: url('/fonts/jost/Jost-Bold.eot');
+	src: url('/fonts/jost/Jost-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/jost/Jost-Bold.woff2') format('woff2'),
+		url('/fonts/jost/Jost-Bold.woff') format('woff'), url('/fonts/jost/Jost-Bold.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-500;
+	font-family: $font-family-jost;
+	font-style: normal;
+	src: url('/fonts/jost/Jost-Medium.eot');
+	src: url('/fonts/jost/Jost-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/jost/Jost-Medium.woff2') format('woff2'),
+		url('/fonts/jost/Jost-Medium.woff') format('woff'), url('/fonts/jost/Jost-Medium.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-600;
+	font-family: $font-family-jost;
+	font-style: normal;
+	src: url('/fonts/jost/Jost-SemiBold.eot');
+	src: url('/fonts/jost/Jost-SemiBold.eot?#iefix') format('embedded-opentype'), url('/fonts/jost/Jost-SemiBold.woff2') format('woff2'),
+		url('/fonts/jost/Jost-SemiBold.woff') format('woff'), url('/fonts/jost/Jost-SemiBold.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-400;
+	font-family: $font-family-jost;
+	font-style: normal;
+	src: url('/fonts/jost/Jost-Regular.eot');
+	src: url('/fonts/jost/Jost-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/jost/Jost-Regular.woff2') format('woff2'),
+		url('/fonts/jost/Jost-Regular.woff') format('woff'), url('/fonts/jost/Jost-Regular.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-300;
+	font-family: $font-family-jost;
+	font-style: normal;
+	src: url('/fonts/jost/Jost-Light.eot');
+	src: url('/fonts/jost/Jost-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/jost/Jost-Light.woff2') format('woff2'),
+		url('/fonts/jost/Jost-Light.woff') format('woff'), url('/fonts/jost/Jost-Light.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-100;
+	font-family: $font-family-jost;
+	font-style: normal;
+	src: url('/fonts/jost/Jost-Thin.eot');
+	src: url('/fonts/jost/Jost-Thin.eot?#iefix') format('embedded-opentype'), url('/fonts/jost/Jost-Thin.woff2') format('woff2'),
+		url('/fonts/jost/Jost-Thin.woff') format('woff'), url('/fonts/jost/Jost-Thin.ttf') format('truetype');
+	font-display: swap;
+}
