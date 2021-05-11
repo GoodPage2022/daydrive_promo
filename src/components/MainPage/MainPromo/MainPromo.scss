@@ -26,7 +26,6 @@
 	&__downloads {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
 		margin-top: 15px;
 
 		&-link {
@@ -54,6 +53,9 @@
 			}
 			&-svg {
 				margin-right: 10px;
+			}
+			&:last-of-type {
+				margin-left: 10px;
 			}
 		}
 	}
@@ -83,6 +85,9 @@
 		&__downloads {
 			&-link {
 				width: 150px;
+				&:last-of-type {
+					margin-left: 20px;
+				}
 			}
 		}
 	}
