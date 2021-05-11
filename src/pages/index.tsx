@@ -1,8 +1,16 @@
 import React from 'react';
-import SectionHeader from '../components/SectionHeader/SectionHeader';
+import MainAboutMain from '../components/MainPage/MainAboutMain/MainAboutMain';
+import MainAdvantage from '../components/MainPage/MainAdvantage/MainAdvantage';
+import MainPromo from '../components/MainPage/MainPromo/MainPromo';
 
 const IndexPage: React.FC = (): JSX.Element => {
-	return <SectionHeader>huy</SectionHeader>;
+	return (
+		<>
+			<MainPromo />
+			<MainAboutMain />
+			<MainAdvantage />
+		</>
+	);
 };
 
 export default IndexPage;
