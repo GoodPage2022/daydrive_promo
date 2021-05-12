@@ -1,0 +1,34 @@
+.tabs {
+	&__header {
+		display: flex;
+		& .tab__title {
+			flex: 0 0 50%;
+			padding-bottom: 15px;
+			font-weight: $fw-700;
+			font-size: $fs-15;
+			line-height: 150%;
+			text-align: center;
+			border-bottom: 2px solid #cdcfcf;
+			cursor: pointer;
+			&.tab__title-active {
+				border-color: $strong-cyan-color;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.tab__title {
+		& .tab__title {
+			font-size: $fs-18;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.tab__title {
+		& .tab__title {
+			font-size: $fs-22;
+		}
+	}
+}
