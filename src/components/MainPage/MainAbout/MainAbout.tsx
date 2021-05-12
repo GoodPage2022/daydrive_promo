@@ -4,14 +4,13 @@ import Paragraph from '../../Paragraph/Paragraph';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import './MainAbout.scss';
 import ArrowSVG from '../../../images/svg/mainPage/arrowMore.inline.svg';
-import MainAboutCarousel from './MainAboutCarousel';
 
 const MainAbout: React.FC = () => {
 	return (
-		<section className="main-about">
+		<section className="main-about-us">
 			<Container>
 				<SectionHeader>О нас</SectionHeader>
-				<div className="main-about__text-wrap">
+				<div className="main-about-us__text-wrap">
 					<Paragraph>
 						Задача организации, в особенности же укрепление и развитие структуры требуют определения и уточнения дальнейших направлений
 						развития. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
@@ -22,11 +21,10 @@ const MainAbout: React.FC = () => {
 						представляет собой интересный эксперимент проверки форм развития.
 					</Paragraph>
 				</div>
-				<button className="main-about__btn-more">
-					подробнее <ArrowSVG className="main-about__btn-svg" />
+				<button className="main-about-us__btn-more">
+					подробнее <ArrowSVG className="main-about-us__btn-svg" />
 				</button>
 			</Container>
-			<MainAboutCarousel />
 		</section>
 	);
 };

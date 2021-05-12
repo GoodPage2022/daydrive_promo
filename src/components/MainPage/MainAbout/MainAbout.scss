@@ -1,19 +1,6 @@
-.main-about {
+.main-about-us {
 	position: relative;
 	z-index: 1;
-	overflow: hidden;
-	&::before {
-		position: absolute;
-		top: -75px;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: -1;
-		background-image: url('../../../images/aboutRectangle.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		content: '';
-	}
 	&__text-wrap {
 		height: 280px;
 		margin-top: 30px;
@@ -39,5 +26,13 @@
 	}
 	&__btn-svg {
 		margin-left: 5px;
+	}
+}
+
+@media screen and(min-width:375px) {
+	.main-about-us {
+		&::before {
+			top: -90px;
+		}
 	}
 }
