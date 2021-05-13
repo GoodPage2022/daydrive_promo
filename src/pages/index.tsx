@@ -4,6 +4,7 @@ import MainAdvantages from '../components/MainPage/MainAdvantages/MainAdvantages
 import MainAboutMain from '../components/MainPage/MainAboutMain/MainAboutMain';
 import MainWhyUse from '../components/MainPage/MainWhyUse/MainWhyUse';
 import MainPromo from '../components/MainPage/MainPromo/MainPromo';
+import MainStart from '../components/MainPage/MainStart/MainStart';
 
 const IndexPage: React.FC = (): JSX.Element => {
 	return (
@@ -13,6 +14,7 @@ const IndexPage: React.FC = (): JSX.Element => {
 			<MainAboutMain />
 			<MainAdvantages />
 			<MainWhyUse />
+			<MainStart />
 		</>
 	);
 };
