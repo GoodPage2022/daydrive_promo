@@ -3,6 +3,7 @@ import MainAboutMain from '../components/MainPage/MainAboutMain/MainAboutMain';
 import MainAdvantage from '../components/MainPage/MainAdvantage/MainAdvantage';
 import MainMobileDecision from '../components/MainPage/MainMobileDecision/MainMobileDecision';
 import MainPromo from '../components/MainPage/MainPromo/MainPromo';
+import MainForm from '../components/MainPage/MainForm/MainForm';
 
 const IndexPage: React.FC = (): JSX.Element => {
 	return (
@@ -11,6 +12,7 @@ const IndexPage: React.FC = (): JSX.Element => {
 			<MainAboutMain />
 			<MainAdvantage />
 			<MainMobileDecision />
+			<MainForm />
 		</>
 	);
 };

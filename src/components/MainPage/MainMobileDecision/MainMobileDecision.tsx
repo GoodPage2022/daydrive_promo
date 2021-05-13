@@ -58,7 +58,7 @@ const MainMobileDecision = () => {
 			<div className="mobile-decision__image-wrapper">
 				<div className="mobile-decision__image-bg" />
 				<div className="mobile-decision__image">
-					<Image fluid={fluid}></Image>
+					<Image imgStyle={{ objectFit: 'contain' }} fluid={fluid}></Image>
 				</div>
 			</div>
 		</section>

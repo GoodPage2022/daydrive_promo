@@ -6,11 +6,12 @@ import './MainAdvantage.scss';
 import { mainAdvantageTabs } from '../../../constants/mainAdvantageTabs';
 import { useState } from 'react';
 import Paragraph from '../../Paragraph/Paragraph';
-import MainAdvantageSVG from '../../../images/svg/mainPage/mainAdvantage/mainAdvantage.inline.svg';
 import { mainAdvantageInfo } from '../../../constants/mainAdvantageInfo';
 
 const MainAdvantage = () => {
 	const [activeTab, setActiveTab] = useState(0);
+
+	const Icon = mainAdvantageTabs[activeTab].icon;
 	return (
 		<section className="main-advantage">
 			<div className="main-advantage__wrapper">
@@ -36,7 +37,7 @@ const MainAdvantage = () => {
 						</div>
 					</Tabs>
 					<div className="main-advantage__svg">
-						<MainAdvantageSVG />
+						<Icon />
 					</div>
 				</Container>
 

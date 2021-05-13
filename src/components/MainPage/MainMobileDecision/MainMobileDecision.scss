@@ -70,3 +70,46 @@
 		}
 	}
 }
+
+@media screen and (min-width: 1200px) {
+	.mobile-decision {
+		&__content {
+			padding: 183px 0 184px 65px;
+			&-title {
+				font-size: $fs-35;
+			}
+		}
+		&__image {
+			& .gatsby-image-wrapper {
+				height: 640px;
+				margin-right: 80px;
+			}
+			&-bg {
+				width: 500px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	.mobile-decision {
+		&__content {
+			padding: 150px 0 150px 75px;
+			&-subtitle {
+				font-size: $fs-30;
+			}
+			&-title {
+				font-size: $fs-60;
+			}
+		}
+		&__image {
+			& .gatsby-image-wrapper {
+				height: 680px;
+				margin-right: 320px;
+			}
+			&-bg {
+				width: 700px;
+			}
+		}
+	}
+}
