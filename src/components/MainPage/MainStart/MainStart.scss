@@ -1,5 +1,5 @@
 .main-start {
-	padding-top: 70px;
+	padding: 70px 0 30px;
 	&__img-wrapper {
 		display: none;
 	}
@@ -21,6 +21,7 @@
 
 @media screen and (min-width: 768px) {
 	.main-start {
+		padding: 100px 0px;
 		& .tabs {
 			&__header {
 				max-width: 350px;
@@ -53,6 +54,7 @@
 
 @media screen and (min-width: 1200px) {
 	.main-start {
+		padding: 100px 0px 140px;
 		& .tabs {
 			&__header {
 				max-width: 430px;
@@ -80,6 +82,8 @@
 
 @media screen and (min-width: 1800px) {
 	.main-start {
+		padding: 100px 0px 240px;
+
 		.tabs {
 			margin-top: 60px;
 			&__content {
