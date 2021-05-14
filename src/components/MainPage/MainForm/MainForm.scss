@@ -1,0 +1,88 @@
+.main-form {
+	padding: 70px 20px;
+	background-color: $white-color;
+	&__form {
+		display: flex;
+		flex-direction: column;
+		padding: 30px 20px;
+		background-color: $bg-form-color;
+		border: 1px solid #bec1c1;
+		border-radius: 10px;
+		box-shadow: -4px 8px 10px rgba(39, 45, 47, 0.13);
+		&-title {
+			color: $dark-grayish-blue-color;
+			font-weight: $fw-600;
+			font-size: $fs-17;
+			line-height: 150%;
+		}
+		&-input {
+			width: 100%;
+			height: 100%;
+			background-color: $transparent;
+			border: none;
+			border-bottom: 1px solid #cdcfcf;
+			outline: none;
+			&-wrapper {
+				position: relative;
+				height: 33px;
+				margin-top: 30px;
+			}
+			& + label {
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: $form-label-color;
+				font-weight: $fw-400;
+				font-size: $fs-15;
+				line-height: 150%;
+			}
+			&:focus {
+				& + label {
+					display: none;
+				}
+			}
+		}
+		&-button {
+			width: 148px;
+			height: 45px;
+			margin-top: 30px;
+			color: $white-color;
+			font-weight: $fw-700;
+			font-size: $fs-18;
+			line-height: 150%;
+			background-color: $strong-cyan-color;
+			border: none;
+			border-radius: 10px;
+			outline: none;
+			box-shadow: 0px 8px 15px rgba(33, 169, 174, 0.15);
+		}
+	}
+	&__svg {
+		width: 280px;
+		margin-top: 25px;
+		& svg {
+			width: 100%;
+			height: 240px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.main-form {
+		display: flex;
+		padding: 100px 30px;
+		&__form {
+			padding: 28px 25px 54px;
+			&-title {
+				font-size: $fs-18;
+			}
+		}
+		&__svg {
+			width: 360px;
+			margin-top: 0;
+			& svg {
+				height: 267px;
+			}
+		}
+	}
+}
