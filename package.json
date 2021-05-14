@@ -2,9 +2,7 @@
 	"name": "day-drive-promo",
 	"version": "1.0.0",
 	"private": true,
-	"keywords": [
-		"gatsby"
-	],
+	"keywords": [ "gatsby" ],
 	"license": "MIT",
 	"main": "n/a",
 	"scripts": {
@@ -46,11 +44,11 @@
 		"gatsby-source-filesystem": "^3.2.0",
 		"gatsby-transformer-remark": "^3.2.0",
 		"gatsby-transformer-sharp": "^3.2.0",
+		"react-spring-3d-carousel": "1.2.0",
 		"react": "^16.14.0",
 		"react-dom": "^16.13.1",
 		"react-helmet": "^5.2.1",
-		"react-inlinesvg": "^2.0.1",
-		"react-multi-carousel": "^2.6.2"
+		"react-inlinesvg": "^2.0.1"
 	},
 	"devDependencies": {
 		"@types/classnames": "^2.2.10",
@@ -81,10 +79,7 @@
 		"typescript": "^3.8.3"
 	},
 	"stylelint": {
-		"extends": [
-			"stylelint-config-recommended",
-			"stylelint-config-rational-order"
-		],
+		"extends": [ "stylelint-config-recommended", "stylelint-config-rational-order" ],
 		"plugins": [
 			"stylelint-order",
 			"stylelint-scss",
@@ -106,18 +101,9 @@
 				}
 			],
 			"sh-waqar/declaration-use-variable": [
-				[
-					"/color/",
-					"font-size",
-					"font-family",
-					"font-weight"
-				],
+				[ "/color/", "font-size", "font-family", "font-weight" ],
 				{
-					"ignoreValues": [
-						"transparent",
-						"inherit",
-						"/regexForspecialFunc/"
-					]
+					"ignoreValues": [ "transparent", "inherit", "/regexForspecialFunc/" ]
 				}
 			],
 			"order/properties-order": [],
@@ -131,9 +117,7 @@
 			"selector-type-no-unknown": [
 				true,
 				{
-					"ignore": [
-						"custom-elements"
-					]
+					"ignore": [ "custom-elements" ]
 				}
 			],
 			"no-descending-specificity": true,

@@ -1,6 +1,7 @@
 .main-about-us {
 	position: relative;
 	z-index: 1;
+	padding: 70px 0px;
 	&__text {
 		margin-top: 30px;
 		&:last-of-type {
@@ -36,10 +37,37 @@
 			transform: rotate(180deg);
 		}
 	}
-	& .carousel {
-		& .gatsby-image-wrapper {
+
+	& .carousel-about {
+		position: relative;
+		width: 100%;
+		height: 500px;
+		margin-top: -50px;
+		&__arrows {
+			position: absolute;
+			top: calc(50% - 23px);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 			width: 100%;
-			height: 100%;
+			& svg {
+				cursor: pointer;
+			}
+		}
+
+		& .gatsby-image-wrapper {
+			width: 160px;
+			height: 310px;
+		}
+		& .css-1fzpoyk {
+			&:nth-of-type(1) {
+				left: 10% !important;
+				transform: translateY(-50%) translateX(-25%) scale(0.8) !important;
+			}
+			&:nth-of-type(3) {
+				left: 90% !important;
+				transform: translateY(-50%) translateX(-75%) scale(0.8) !important;
+			}
 		}
 	}
 }
@@ -57,18 +85,60 @@
 				grid-row: 2;
 				grid-column: 1/3;
 				height: unset;
+				margin: unset;
 				overflow: unset;
 			}
 		}
 		&__btn-more {
 			display: none;
 		}
-		& .carousel {
+		& .carousel-about {
 			grid-row: 1;
 			grid-column: 2;
+			height: 375px;
 			& .gatsby-image-wrapper {
 				width: 190px;
 				height: 375px;
+			}
+		}
+	}
+}
+
+@media screen and(min-width:1200px) {
+	.main-about-us {
+		&__wrapper {
+			grid-template-columns: 570px 1fr;
+		}
+		&__text {
+			&:nth-of-type(2) {
+				grid-row: 2;
+				grid-column: 1;
+			}
+		}
+		& .carousel-about {
+			grid-row: 1/3;
+			height: 470px;
+
+			& .gatsby-image-wrapper {
+				width: 245px;
+				height: 100%;
+			}
+		}
+	}
+}
+
+@media screen and(min-width:1800px) {
+	.main-about-us {
+		&__wrapper {
+			grid-template-columns: 730px 1fr;
+		}
+
+		& .carousel-about {
+			height: 535px;
+
+			& .gatsby-image-wrapper {
+				width: 280px;
+				height: 100%;
 			}
 		}
 	}

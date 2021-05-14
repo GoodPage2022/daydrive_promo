@@ -1,38 +1,13 @@
-import React, { useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import Container from '../../Container/Container';
 import Paragraph from '../../Paragraph/Paragraph';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import './MainAbout.scss';
-import Image from 'gatsby-image';
 import ArrowSVG from '../../../images/svg/mainPage/arrowMore.inline.svg';
-import { graphql, useStaticQuery } from 'gatsby';
-import Carousel from '../../Carousel/Carousel';
-import { MainAboutQueryTypes } from './Types';
-import ArrowNextSVG from '../../../images/svg/mainPage/arrowNext.inline.svg';
-import ArrowPrevSVG from '../../../images/svg/mainPage/arrowPrev.inline.svg';
 
-const MAIN_ABOUT_US_QUERY = graphql`
-	query MainAboutUsQuery {
-		allFile(filter: { relativePath: { regex: "/images/mainAboutUs/" } }) {
-			nodes {
-				absolutePath
-				childImageSharp {
-					fluid {
-						...GatsbyImageSharpFluid_withWebp
-					}
-				}
-				relativePath
-				relativeDirectory
-			}
-		}
-	}
-`;
+const TryCarousel = React.lazy(() => import('./TryCarousel'));
 
 const MainAbout: React.FC = () => {
-	const {
-		allFile: { nodes },
-	}: MainAboutQueryTypes = useStaticQuery(MAIN_ABOUT_US_QUERY);
-
 	const [detailsOpen, setDetailsOpen] = useState<boolean>(false);
 
 	const handleDetails = () => {
@@ -58,11 +33,11 @@ const MainAbout: React.FC = () => {
 					<button className="main-about-us__btn-more" onClick={handleDetails}>
 						подробнее <ArrowSVG className={`main-about-us__btn-svg ${detailsOpen ? 'main-about-us__btn-svg--open' : ''}`} />
 					</button>
-					<Carousel buttonPrev={<ArrowPrevSVG />} buttonNext={<ArrowNextSVG />}>
-						{nodes.map(({ childImageSharp: { fluid } }, i) => (
-							<Image key={`${i}+${fluid}`} fluid={fluid}></Image>
-						))}
-					</Carousel>
+					{typeof window !== 'undefined' && (
+						<Suspense fallback={<div />}>
+							<TryCarousel />
+						</Suspense>
+					)}
 				</div>
 			</Container>
 		</section>
