@@ -1,5 +1,6 @@
 .header {
 	&__nav {
+		z-index: 1;
 		display: none;
 		align-items: center;
 		justify-content: space-between;
@@ -12,6 +13,7 @@
 			font-size: $fs-14;
 			line-height: 135%;
 			text-decoration: none;
+			cursor: pointer;
 			&:not(:last-of-type) {
 				margin-right: 50px;
 			}

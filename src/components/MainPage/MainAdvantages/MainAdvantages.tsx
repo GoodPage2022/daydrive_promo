@@ -1,11 +1,13 @@
-import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+//components
 import { advantages } from '../../../constants/advantages';
-import { imageArrayReplace } from '../../../helpers/images';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import CarouselDesktop from './Carousel/CarouselDesktop';
 import CarouselMac from './Carousel/CarouselMac';
 import CarouselMobile from './Carousel/CarouselMobile';
+//helpers
+import { imageArrayReplace } from '../../../helpers/images';
 
 import './MainAdvantages.scss';
 

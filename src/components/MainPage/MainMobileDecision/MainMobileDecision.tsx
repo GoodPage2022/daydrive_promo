@@ -1,10 +1,12 @@
 import React from 'react';
 import Image from 'gatsby-image';
-import Paragraph from '../../Paragraph/Paragraph';
+import { graphql, useStaticQuery } from 'gatsby';
 import './MainMobileDecision.scss';
+//components
+import Paragraph from '../../Paragraph/Paragraph';
+//svg
 import AppleSVG from '../../../images/svg/mainPage/apple.inline.svg';
 import PlaystoreSVG from '../../../images/svg/mainPage//playstore.inline.svg';
-import { graphql, useStaticQuery } from 'gatsby';
 
 const MOBILE_DECISION_IMAGE_QUERY = graphql`
 	query decisionImageQuery {

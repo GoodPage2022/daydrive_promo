@@ -1,6 +1,6 @@
 import React from 'react';
-import Paragraph from '../../Paragraph/Paragraph';
 import './MainStartTabItem.scss';
+import Paragraph from '../../Paragraph/Paragraph';
 import { MainStartTabItemsProps } from './Types';
 
 const MainStartTabItem: React.FC<MainStartTabItemsProps> = ({ count, title, desc }) => {

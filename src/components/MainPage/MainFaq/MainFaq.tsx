@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import './MainFaq.scss';
+//components
 import { mainFaqTabs } from '../../../constants/mainFaqTabs';
 import Container from '../../Container/Container';
 import Paragraph from '../../Paragraph/Paragraph';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import Tabs, { TabHeader } from '../../Tabs/Tabs';
-import './MainFaq.scss';
 
 const MainFaq: React.FC = () => {
 	const [activeTab, setActiveTab] = useState(0);

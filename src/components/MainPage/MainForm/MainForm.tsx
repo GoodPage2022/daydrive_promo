@@ -1,6 +1,7 @@
 import React from 'react';
-import FormSVG from '../../../images/svg/mainPage/mainForm/mainForm.inline.svg';
 import './MainForm.scss';
+//svg
+import FormSVG from '../../../images/svg/mainPage/mainForm/mainForm.inline.svg';
 
 const MainForm = () => {
 	const [name, setName] = React.useState('');

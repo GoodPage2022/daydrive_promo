@@ -1,11 +1,13 @@
 import React from 'react';
 import './MainPromo.scss';
-import Container from '../../Container/Container';
 import Image from 'gatsby-image';
-import AppleSVG from '../../../images/svg/mainPage/apple.inline.svg';
-import PlaystoreSVG from '../../../images/svg/mainPage//playstore.inline.svg';
 import { graphql } from 'gatsby';
 import { useStaticQuery } from 'gatsby';
+//components
+import Container from '../../Container/Container';
+//svg
+import AppleSVG from '../../../images/svg/mainPage/apple.inline.svg';
+import PlaystoreSVG from '../../../images/svg/mainPage//playstore.inline.svg';
 
 const MAIN_PROMO_IMG_QUERY = graphql`
 	query promoImgQuery {

@@ -47,10 +47,10 @@ const Footer: React.FC = () => {
 						</a>
 					</div>
 					<div className="footer__bottom">
-						<div className="footer__bottom-developed">
+						<a className="footer__bottom-developed" href="https://goodpage.studio/" target="_blank" rel="noreferrer">
 							<p className="footer__bottom-developed-text">Сайт разработан</p>
 							<GpLogoSVG />
-						</div>
+						</a>
 						<p className="footer__bottom-copyright">Copyright © 2021 DAYDRIVE</p>
 					</div>
 				</div>

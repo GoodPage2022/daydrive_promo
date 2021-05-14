@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { mainStartTabs } from '../../../constants/mainStartTabs';
 import './MainStart.scss';
+import { graphql, useStaticQuery } from 'gatsby';
+import Image from 'gatsby-image';
+//components
+import { mainStartTabs } from '../../../constants/mainStartTabs';
 import Container from '../../Container/Container';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import Tabs, { TabHeader } from '../../Tabs/Tabs';
 import MainStartTabItem from './MainStartTabItem';
-import { graphql, useStaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
 
 const HOW_START_IMG_QUERY = graphql`
 	query howStartImgQuery {

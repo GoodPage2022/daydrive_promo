@@ -1,11 +1,13 @@
 import React, { Suspense, useState } from 'react';
+import './MainAbout.scss';
+//components
 import Container from '../../Container/Container';
 import Paragraph from '../../Paragraph/Paragraph';
 import SectionHeader from '../../SectionHeader/SectionHeader';
-import './MainAbout.scss';
+//svg
 import ArrowSVG from '../../../images/svg/mainPage/arrowMore.inline.svg';
 
-const TryCarousel = React.lazy(() => import('./TryCarousel'));
+const Carousel = React.lazy(() => import('./Carousel'));
 
 const MainAbout: React.FC = () => {
 	const [detailsOpen, setDetailsOpen] = useState<boolean>(false);
@@ -35,7 +37,7 @@ const MainAbout: React.FC = () => {
 					</button>
 					{typeof window !== 'undefined' && (
 						<Suspense fallback={<div />}>
-							<TryCarousel />
+							<Carousel />
 						</Suspense>
 					)}
 				</div>

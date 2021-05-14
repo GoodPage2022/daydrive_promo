@@ -1,6 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React, { useState } from 'react';
 import Carousel from 'react-spring-3d-carousel';
+import { config } from 'react-spring';
+
 import { MainAboutQueryTypes } from './Types';
 import Image from 'gatsby-image';
 import NextArrowSVG from '../../../images/svg/mainPage/arrowNext.inline.svg';
@@ -32,19 +34,19 @@ const TryCarousel = () => {
 	const slides = [
 		{
 			key: '0',
-			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[3].childImageSharp.fluid} />,
+			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[3].childImageSharp.fluid} alt="1" />,
 		},
 		{
 			key: '1',
-			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[1].childImageSharp.fluid} />,
+			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[1].childImageSharp.fluid} alt="2" />,
 		},
 		{
 			key: '2',
-			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[0].childImageSharp.fluid} />,
+			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[0].childImageSharp.fluid} alt="3" />,
 		},
 		{
 			key: '3',
-			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[2].childImageSharp.fluid} />,
+			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[2].childImageSharp.fluid} alt="1" />,
 		},
 	].map((slide, idx) => {
 		return {
@@ -94,13 +96,7 @@ const TryCarousel = () => {
 	return (
 		<div className="carousel-about" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
 			{typeof window !== 'undefined' && (
-				<Carousel
-					slides={slides}
-					goToSlide={slide}
-					animationConfig={{ tension: 120, friction: 20 }}
-					offsetRadius={1}
-					showNavigation={false}
-				/>
+				<Carousel slides={slides} goToSlide={slide} animationConfig={config.gentle} offsetRadius={1} showNavigation={false} />
 			)}
 			<div className="carousel-about__arrows">
 				<div onClick={() => goToSlide((prev) => prev + 1)}>

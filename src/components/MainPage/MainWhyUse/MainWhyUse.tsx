@@ -1,10 +1,11 @@
 import React from 'react';
+import './MainWhyUse.scss';
+import { useState } from 'react';
+//components
 import Container from '../../Container/Container';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import Tabs, { TabHeader } from '../../Tabs/Tabs';
-import './MainWhyUse.scss';
 import { mainAdvantageTabs } from '../../../constants/mainAdvantageTabs';
-import { useState } from 'react';
 import Paragraph from '../../Paragraph/Paragraph';
 import { mainAdvantageInfo } from '../../../constants/mainAdvantageInfo';
 
