@@ -38,11 +38,11 @@ const TryCarousel = () => {
 		},
 		{
 			key: '1',
-			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[1].childImageSharp.fluid} alt="2" />,
+			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[0].childImageSharp.fluid} alt="2" />,
 		},
 		{
 			key: '2',
-			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[0].childImageSharp.fluid} alt="3" />,
+			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[1].childImageSharp.fluid} alt="3" />,
 		},
 		{
 			key: '3',
