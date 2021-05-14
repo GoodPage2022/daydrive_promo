@@ -12,6 +12,7 @@
 				overflow: hidden;
 				cursor: pointer;
 				user-select: none;
+				-webkit-tap-highlight-color: $transparent;
 
 				&-toggler {
 					position: relative;

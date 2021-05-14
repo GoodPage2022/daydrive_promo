@@ -17,7 +17,14 @@ const MainFaq: React.FC = () => {
 				<Tabs>
 					<div className="tabs__header">
 						{mainFaqTabs.map(({ id, title }) => (
-							<TabHeader key={id} onItemClicked={() => setActiveTab(id)} isActive={activeTab === id}>
+							<TabHeader
+								key={id}
+								onItemClicked={() => {
+									setActiveTab(id);
+									setActiveQuestion(null);
+								}}
+								isActive={activeTab === id}
+							>
 								{title}
 							</TabHeader>
 						))}
