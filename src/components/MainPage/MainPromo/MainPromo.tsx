@@ -14,7 +14,7 @@ const MAIN_PROMO_IMG_QUERY = graphql`
 		file(relativePath: { regex: "/promoImg.png$/" }) {
 			id
 			childImageSharp {
-				fluid(quality: 100) {
+				fluid(maxWidth: 4096, quality: 100) {
 					...GatsbyImageSharpFluid_withWebp
 				}
 			}
@@ -60,7 +60,7 @@ const MainPromo: React.FC = () => {
 					</div>
 				</div>
 			</Container>
-			<Image className="main-promo__img" fluid={fluid} />
+			<Image className="main-promo__img" fluid={fluid} loading="eager" />
 		</section>
 	);
 };
