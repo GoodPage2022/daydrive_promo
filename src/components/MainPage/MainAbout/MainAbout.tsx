@@ -17,7 +17,7 @@ const MainAbout: React.FC = () => {
 	};
 
 	return (
-		<section className="main-about-us">
+		<section className="main-about-us" id="about">
 			<Container>
 				<SectionHeader>О нас</SectionHeader>
 				<div className="main-about-us__wrapper">

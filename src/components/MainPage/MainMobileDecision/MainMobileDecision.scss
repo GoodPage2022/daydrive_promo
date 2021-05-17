@@ -1,4 +1,9 @@
 .mobile-decision {
+	position: relative;
+	&__svg {
+		position: absolute;
+		display: none;
+	}
 	&__content {
 		padding: 70px 20px;
 		&-subtitle {
@@ -46,6 +51,23 @@
 @media screen and (min-width: 768px) {
 	.mobile-decision {
 		display: flex;
+		overflow: hidden;
+		&__svg {
+			display: block;
+			&--first {
+				top: -101px;
+				left: -50px;
+				width: 202px;
+				height: 202px;
+			}
+			&--second {
+				right: -55px;
+				bottom: -104px;
+				z-index: 1;
+				width: 208px;
+				height: 208px;
+			}
+		}
 		&__content {
 			flex: 0 0 50%;
 			padding: 100px 0 100px 30px;
@@ -73,9 +95,24 @@
 
 @media screen and (min-width: 1200px) {
 	.mobile-decision {
+		&__svg {
+			&--first {
+				top: -141px;
+				left: -60px;
+				width: 281px;
+				height: 281px;
+			}
+			&--second {
+				right: -75px;
+				bottom: -142px;
+				width: 284px;
+				height: 284px;
+			}
+		}
 		&__content {
 			padding: 183px 0 184px 65px;
 			&-title {
+				max-width: 515px;
 				font-size: $fs-35;
 			}
 		}
@@ -93,12 +130,21 @@
 
 @media screen and (min-width: 1800px) {
 	.mobile-decision {
+		&__svg {
+			&--second {
+				right: -110px;
+				bottom: -205px;
+				width: 410px;
+				height: 410px;
+			}
+		}
 		&__content {
 			padding: 150px 0 150px 75px;
 			&-subtitle {
 				font-size: $fs-30;
 			}
 			&-title {
+				max-width: unset;
 				font-size: $fs-60;
 			}
 		}

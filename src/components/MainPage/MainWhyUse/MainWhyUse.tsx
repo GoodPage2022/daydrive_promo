@@ -14,7 +14,7 @@ const MainAdvantage = () => {
 
 	const Icon = mainAdvantageTabs[activeTab].icon;
 	return (
-		<section className="main-why-use">
+		<section className="main-why-use" id="useful">
 			<div className="main-why-use__wrapper">
 				<Container>
 					<SectionHeader>ЧЕМ ПОЛЕЗНО ПРИЛОЖЕНИЕ?</SectionHeader>
@@ -37,7 +37,7 @@ const MainAdvantage = () => {
 							</ul>
 						</div>
 					</Tabs>
-					<div className="main-advantage__svg">
+					<div className="main-why-use__svg">
 						<Icon />
 					</div>
 				</Container>

@@ -17,6 +17,7 @@ body {
 	font-family: $font-family-jost;
 	background: $light-gray-color;
 	transition: background 0.3s ease;
+	scroll-behavior: smooth;
 	&::before {
 		position: absolute;
 		top: 0;
@@ -37,4 +38,9 @@ body {
 			opacity: 1;
 		}
 	}
+}
+
+#header-shape-gradient {
+	--color-stop: #f12c06;
+	--color-bot: #faed34;
 }

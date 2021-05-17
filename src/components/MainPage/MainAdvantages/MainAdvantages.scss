@@ -9,6 +9,10 @@
 		&-list {
 			&-item {
 				padding: 0px 20px;
+				& .gatsby-image-wrapper {
+					width: 280px;
+					height: 510px;
+				}
 			}
 		}
 		&-dots {
@@ -81,8 +85,12 @@
 
 @media screen and (min-width: 768px) {
 	.main-advantages {
+		& .section-header {
+			padding: 0 30px;
+		}
 		.carousel {
 			&-list-item {
+				padding: 0 30px;
 				&-current {
 					& + .carousel-list-item {
 						transform: translate(-160px);
@@ -90,10 +98,10 @@
 				}
 			}
 			&-buttons {
-				padding-right: 20px;
+				padding: 0px 35px;
 			}
 			&-dots {
-				max-width: 540px;
+				max-width: 550px;
 			}
 		}
 		&__carousel {

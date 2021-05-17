@@ -11,9 +11,9 @@ const MainAboutMain = () => {
 		<section className="main-about">
 			<Container>
 				<SectionHeader>
-					Главное{' '}
+					Главное о
 					<span>
-						о <span>day drive</span>
+						<span> day drive</span>
 					</span>
 				</SectionHeader>
 				<div className="main-about__list">

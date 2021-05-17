@@ -17,7 +17,7 @@ const MAIN_ADV_IMG_QUERY = graphql`
 			nodes {
 				absolutePath
 				childImageSharp {
-					fluid {
+					fluid(maxWidth: 4096, quality: 100) {
 						...GatsbyImageSharpFluid_withWebp
 					}
 				}
@@ -36,7 +36,7 @@ const MainAdvantages: React.FC = () => {
 	const items = imageArrayReplace(advantages, nodes);
 
 	return (
-		<div className="main-advantages">
+		<div className="main-advantages" id="howWork">
 			<SectionHeader>преимущества</SectionHeader>
 			<CarouselMobile items={items} />
 			<CarouselMac items={items} />

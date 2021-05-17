@@ -22,7 +22,7 @@ const MainForm = () => {
 		setPhone(e.target.value);
 	};
 	return (
-		<section className="main-form">
+		<section className="main-form" id="contacts">
 			<form onSubmit={handleSubmit} className="main-form__form">
 				<h3 className="main-form__form-title">Заполните форму, и мы свяжемся с вами в ближайшее время</h3>
 				<div className="main-form__form-input-wrapper">

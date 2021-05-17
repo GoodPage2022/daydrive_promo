@@ -7,13 +7,15 @@ import Paragraph from '../../Paragraph/Paragraph';
 //svg
 import AppleSVG from '../../../images/svg/mainPage/apple.inline.svg';
 import PlaystoreSVG from '../../../images/svg/mainPage//playstore.inline.svg';
+import CircleSVG from '../../../images/svg/mainPage/mainMobileDecision/circle.inline.svg';
+import Circle1SVG from '../../../images/svg/mainPage/mainMobileDecision/circle1.inline.svg';
 
 const MOBILE_DECISION_IMAGE_QUERY = graphql`
 	query decisionImageQuery {
 		file(relativePath: { regex: "/decision.png$/" }) {
 			id
 			childImageSharp {
-				fluid(quality: 100) {
+				fluid(quality: 100, maxWidth: 4096) {
 					...GatsbyImageSharpFluid_withWebp
 				}
 			}
@@ -29,7 +31,10 @@ const MainMobileDecision = () => {
 	} = useStaticQuery(MOBILE_DECISION_IMAGE_QUERY);
 
 	return (
-		<section className="mobile-decision">
+		<section className="mobile-decision" id="download">
+			<CircleSVG className="mobile-decision__svg mobile-decision__svg--first" />
+			<Circle1SVG className="mobile-decision__svg mobile-decision__svg--second" />
+
 			<div className="mobile-decision__content">
 				<h3 className="mobile-decision__content-subtitle">БОЛЬШЕ ЧЕМ ПРИЛОЖЕНИЕ</h3>
 				<h2 className="mobile-decision__content-title">МОБИЛЬНОЕ РЕШЕНИЕ ДЛЯ ВАШЕГО АВТО</h2>

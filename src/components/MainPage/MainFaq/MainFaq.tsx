@@ -12,7 +12,7 @@ const MainFaq: React.FC = () => {
 	const [activeQuestion, setActiveQuestion] = useState<number | null>(null);
 
 	return (
-		<div className="main-faq">
+		<div className="main-faq" id="faq">
 			<Container>
 				<SectionHeader>частые вопросы</SectionHeader>
 				<Tabs>

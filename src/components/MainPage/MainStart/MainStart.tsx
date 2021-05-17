@@ -14,7 +14,7 @@ const HOW_START_IMG_QUERY = graphql`
 		file(relativePath: { regex: "/howToStart.png$/" }) {
 			id
 			childImageSharp {
-				fluid(quality: 100) {
+				fluid(quality: 100, maxWidth: 4096) {
 					...GatsbyImageSharpFluid_withWebp
 				}
 			}
