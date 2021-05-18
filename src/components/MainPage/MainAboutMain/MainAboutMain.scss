@@ -90,12 +90,13 @@
 
 @media screen and (min-width: 1800px) {
 	.main-about {
-		padding: 150px 0;
+		padding: 60px 0;
 		&__list {
 			row-gap: 85px;
 			column-gap: unset;
 			&-item {
 				width: 100%;
+
 				max-width: 375px;
 			}
 		}

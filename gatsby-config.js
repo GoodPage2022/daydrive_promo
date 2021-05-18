@@ -5,8 +5,8 @@ require('dotenv').config();
 module.exports = {
 	siteMetadata: {
 		author: {
-			name: 'Bla',
-		},
+			name: 'Bla'
+		}
 	},
 	plugins: [
 		{
@@ -18,33 +18,33 @@ module.exports = {
 				background_color: '#323232',
 				theme_color: '#323232',
 				display: 'minimal-ui',
-				icon: 'assets/images/fav.png',
-			},
+				icon: 'src/images/promoImg.png'
+			}
 		},
 		{
 			resolve: 'gatsby-plugin-layout',
 			options: {
-				component: require.resolve('./src/components/layout.tsx'),
-			},
+				component: require.resolve('./src/components/layout.tsx')
+			}
 		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: 'src',
-				path: `${__dirname}/src`,
-			},
+				path: `${__dirname}/src`
+			}
 		},
 		{
 			resolve: 'gatsby-plugin-eslint',
 			options: {
 				test: /\.ts$|\.tsx$/,
 				exclude: /(node_modules|.cache|public|)/,
-				stages: ['develop'],
+				stages: [ 'develop' ],
 				options: {
 					emitWarning: true,
-					failOnError: true,
-				},
-			},
+					failOnError: true
+				}
+			}
 		},
 		{
 			resolve: 'gatsby-plugin-react-svg',
@@ -65,12 +65,12 @@ module.exports = {
 					}
 
 					return `@import "/src/styles/variables"; ${content}`;
-				},
-			},
+				}
+			}
 		},
 		'gatsby-plugin-typescript',
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
-		'gatsby-plugin-react-helmet',
-	],
+		'gatsby-plugin-react-helmet'
+	]
 };

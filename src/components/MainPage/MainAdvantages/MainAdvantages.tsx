@@ -17,7 +17,7 @@ const MAIN_ADV_IMG_QUERY = graphql`
 			nodes {
 				absolutePath
 				childImageSharp {
-					fluid(maxWidth: 4096, quality: 100) {
+					fluid(maxWidth: 6000, quality: 100) {
 						...GatsbyImageSharpFluid_withWebp
 					}
 				}

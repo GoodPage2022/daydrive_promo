@@ -14,7 +14,7 @@ const MAIN_PROMO_IMG_QUERY = graphql`
 		file(relativePath: { regex: "/promoImg.png$/" }) {
 			id
 			childImageSharp {
-				fluid(maxWidth: 4096, quality: 100) {
+				fluid(maxWidth: 6000, quality: 100) {
 					...GatsbyImageSharpFluid_withWebp
 				}
 			}
