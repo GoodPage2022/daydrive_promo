@@ -1,18 +1,19 @@
 import React from 'react';
+import './MainAboutMain.scss';
+//components
 import { mainAboutMain } from '../../../constants/mainAboutMain';
 import Container from '../../Container/Container';
 import Paragraph from '../../Paragraph/Paragraph';
 import SectionHeader from '../../SectionHeader/SectionHeader';
-import './MainAboutMain.scss';
 
 const MainAboutMain = () => {
 	return (
 		<section className="main-about">
 			<Container>
 				<SectionHeader>
-					Главное{' '}
+					Главное о
 					<span>
-						о <span>day drive</span>
+						<span> day drive</span>
 					</span>
 				</SectionHeader>
 				<div className="main-about__list">

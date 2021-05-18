@@ -7,26 +7,26 @@ export const nav = [
 	{
 		id: 2,
 		title: 'Чем полезно',
-		href: '#about',
+		href: '#useful',
 	},
 	{
 		id: 3,
 		title: 'Как это работает',
-		href: '#about',
+		href: '#howWork',
 	},
 	{
 		id: 4,
 		title: 'Частые вопросы',
-		href: '#about',
+		href: '#faq',
 	},
 	{
 		id: 5,
 		title: 'Скачать приложение',
-		href: '#about',
+		href: '#download',
 	},
 	{
 		id: 6,
 		title: 'Контакты',
-		href: '#about',
+		href: '#contacts',
 	},
 ];

@@ -1,6 +1,6 @@
 import React from 'react';
-import { nav } from '../../../constants/nav';
 import './HeaderNav.scss';
+import { nav } from '../../../constants/nav';
 
 const HeaderNav: React.FC = () => {
 	return (

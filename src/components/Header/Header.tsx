@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import BurgerMenu from './BurgerMenu/BurgerMenu';
 import './Header.scss';
+//components
+import BurgerMenu from './BurgerMenu/BurgerMenu';
 import HeaderNav from './HeaderNav/HeaderNav';
+//svg
 import LogoSVG from '../../images/svg/logo.inline.svg';
 
 const Header = () => {

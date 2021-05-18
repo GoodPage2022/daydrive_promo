@@ -10,15 +10,17 @@
 			text-align: center;
 			border-bottom: 2px solid #cdcfcf;
 			cursor: pointer;
+			transition: border 0.3s ease;
 			&.tab__title-active {
 				border-color: $strong-cyan-color;
+				transition: border 0.3s ease;
 			}
 		}
 	}
 }
 
 @media screen and (min-width: 768px) {
-	.tab__title {
+	.tabs {
 		& .tab__title {
 			font-size: $fs-18;
 		}
@@ -26,7 +28,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-	.tab__title {
+	.tabs {
 		& .tab__title {
 			font-size: $fs-22;
 		}

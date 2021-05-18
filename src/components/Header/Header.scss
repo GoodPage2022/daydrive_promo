@@ -21,7 +21,7 @@
 			width: 20px;
 			height: 3px;
 			background-color: $black-color;
-			transition: width 0.3s ease, transform 0.3s ease, color 0.3s ease;
+			transition: width 0.3s ease, transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 			content: '';
 		}
 		&::before {
@@ -69,6 +69,14 @@
 		padding: 25px 65px;
 		&__burger {
 			display: none;
+		}
+	}
+}
+@media screen and(min-width:1800px) {
+	.header {
+		&__logo {
+			width: 160px;
+			height: 35px;
 		}
 	}
 }

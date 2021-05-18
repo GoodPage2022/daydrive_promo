@@ -1,0 +1,161 @@
+.mobile-decision {
+	position: relative;
+	&__svg {
+		position: absolute;
+		display: none;
+	}
+	&__content {
+		padding: 70px 20px;
+		&-subtitle {
+			width: max-content;
+			font-weight: $fw-700;
+			font-size: $fs-14;
+			line-height: 135%;
+			text-transform: uppercase;
+			background: linear-gradient(90deg, #27cfce 0%, #2486e1 63.02%, #3a49d6 100%);
+			background-clip: text;
+			-webkit-text-fill-color: $transparent;
+		}
+		&-title {
+			margin-top: 20px;
+			color: $very-dark-blue-color;
+			font-weight: $fw-700;
+			font-size: $fs-22;
+			line-height: 150%;
+		}
+		& .paragraph {
+			margin: 20px 0;
+		}
+	}
+	&__image {
+		width: 100%;
+
+		&-wrapper {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
+		&-bg {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: linear-gradient(90deg, #27c9cf 0%, #2b89a7 100%);
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.mobile-decision {
+		display: flex;
+		overflow: hidden;
+		&__svg {
+			display: block;
+			&--first {
+				top: -101px;
+				left: -50px;
+				width: 202px;
+				height: 202px;
+			}
+			&--second {
+				right: -55px;
+				bottom: -104px;
+				z-index: 1;
+				width: 208px;
+				height: 208px;
+			}
+		}
+		&__content {
+			flex: 0 0 50%;
+			padding: 100px 0 100px 30px;
+			&-subtitle {
+				font-size: $fs-17;
+			}
+			&-title {
+				font-size: $fs-30;
+			}
+			& .paragraph {
+				margin: 26px 0;
+			}
+		}
+		&__image {
+			& .gatsby-image-wrapper {
+				height: 423px;
+			}
+			&-bg {
+				left: unset;
+				width: 300px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.mobile-decision {
+		&__svg {
+			&--first {
+				top: -141px;
+				left: -60px;
+				width: 281px;
+				height: 281px;
+			}
+			&--second {
+				right: -75px;
+				bottom: -142px;
+				width: 284px;
+				height: 284px;
+			}
+		}
+		&__content {
+			padding: 183px 0 184px 65px;
+			&-title {
+				max-width: 515px;
+				font-size: $fs-35;
+			}
+		}
+		&__image {
+			& .gatsby-image-wrapper {
+				height: 640px;
+				margin-right: 80px;
+			}
+			&-bg {
+				width: 500px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	.mobile-decision {
+		&__svg {
+			&--second {
+				right: -110px;
+				bottom: -205px;
+				width: 410px;
+				height: 410px;
+			}
+		}
+		&__content {
+			padding: 150px 0 150px 75px;
+			&-subtitle {
+				font-size: $fs-30;
+			}
+			&-title {
+				max-width: unset;
+				font-size: $fs-60;
+			}
+		}
+		&__image {
+			& .gatsby-image-wrapper {
+				height: 680px;
+				margin-right: 320px;
+			}
+			&-bg {
+				width: 700px;
+			}
+		}
+	}
+}
