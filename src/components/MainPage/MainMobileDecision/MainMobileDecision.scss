@@ -22,9 +22,16 @@
 			font-weight: $fw-700;
 			font-size: $fs-22;
 			line-height: 150%;
+			text-transform: uppercase;
 		}
-		& .paragraph {
+		&-text {
 			margin: 20px 0;
+			color: $black-color;
+			font-size: $fs-17;
+			line-height: 149.5%;
+			& p {
+				word-break: break-all;
+			}
 		}
 	}
 	&__image {
@@ -77,7 +84,7 @@
 			&-title {
 				font-size: $fs-30;
 			}
-			& .paragraph {
+			&-text {
 				margin: 26px 0;
 			}
 		}

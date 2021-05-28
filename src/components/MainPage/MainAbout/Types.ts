@@ -11,3 +11,9 @@ type NodesTypes = {
 		fluid: FluidObject;
 	};
 };
+
+export type AboutUsTextTypes = {
+	aboutUsDesc: { value: string };
+	aboutUsDescSecond: { value: string };
+	aboutUsTitle: { value: string };
+};

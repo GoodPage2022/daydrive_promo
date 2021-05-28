@@ -1,6 +1,5 @@
 import React from 'react';
 import './MainStartTabItem.scss';
-import Paragraph from '../../Paragraph/Paragraph';
 import { MainStartTabItemsProps } from './Types';
 
 const MainStartTabItem: React.FC<MainStartTabItemsProps> = ({ count, title, desc }) => {
@@ -12,7 +11,7 @@ const MainStartTabItem: React.FC<MainStartTabItemsProps> = ({ count, title, desc
 				</div>
 				<p className="main-start__content-item-title">{title}</p>
 			</div>
-			<Paragraph>{desc}</Paragraph>
+			<div className="main-start__content-item-text" dangerouslySetInnerHTML={{ __html: desc }} />
 		</div>
 	);
 };

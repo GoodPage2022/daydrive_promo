@@ -1,17 +1,5 @@
-import { FluidObject } from 'gatsby-image';
+import { AdvatagesItemsType } from '../Types';
 
 export type CarouselProps = {
-	items: ItemsTypes[];
-};
-
-type ItemsTypes = {
-	itemCount: string;
-	itemDesc: string;
-	itemName: string;
-	itemTitle: string;
-	image: {
-		childImageSharp: {
-			fluid: FluidObject;
-		};
-	};
+	items: AdvatagesItemsType[];
 };

@@ -1,28 +1,39 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 //components
-import { advantages } from '../../../constants/advantages';
 import SectionHeader from '../../SectionHeader/SectionHeader';
-import CarouselDesktop from './Carousel/CarouselDesktop';
-import CarouselMac from './Carousel/CarouselMac';
 import CarouselMobile from './Carousel/CarouselMobile';
 //helpers
-import { imageArrayReplace } from '../../../helpers/images';
 
 import './MainAdvantages.scss';
+import { AdvatagesItemsType } from './Types';
+import CarouselMac from './Carousel/CarouselMac';
+import CarouselDesktop from './Carousel/CarouselDesktop';
 
-const MAIN_ADV_IMG_QUERY = graphql`
-	query MainAdvImageQuery {
-		allFile(filter: { relativePath: { regex: "/images/advantages/" } }) {
-			nodes {
-				absolutePath
-				childImageSharp {
-					fluid(maxWidth: 6000, quality: 100) {
-						...GatsbyImageSharpFluid_withWebp
+const ABOUT_ADVANTAGES_QUERY = graphql`
+	query aboutAdvantagesQuery {
+		cockpitMainPage {
+			appAdvantages {
+				value {
+					itemImg {
+						value {
+							childImageSharp {
+								fluid {
+									...GatsbyImageSharpFluid
+								}
+							}
+						}
+					}
+					itemSubTitle {
+						value
+					}
+					itemText {
+						value
+					}
+					itemTitle {
+						value
 					}
 				}
-				relativePath
-				relativeDirectory
 			}
 		}
 	}
@@ -30,17 +41,19 @@ const MAIN_ADV_IMG_QUERY = graphql`
 
 const MainAdvantages: React.FC = () => {
 	const {
-		allFile: { nodes },
-	} = useStaticQuery(MAIN_ADV_IMG_QUERY);
+		cockpitMainPage: {
+			appAdvantages: { value },
+		},
+	} = useStaticQuery(ABOUT_ADVANTAGES_QUERY);
 
-	const items = imageArrayReplace(advantages, nodes);
+	const advantagesItems: AdvatagesItemsType[] = value;
 
 	return (
 		<div className="main-advantages" id="howWork">
 			<SectionHeader>преимущества</SectionHeader>
-			<CarouselMobile items={items} />
-			<CarouselMac items={items} />
-			<CarouselDesktop items={items} />
+			<CarouselMobile items={advantagesItems} />
+			<CarouselMac items={advantagesItems} />
+			<CarouselDesktop items={advantagesItems} />
 		</div>
 	);
 };

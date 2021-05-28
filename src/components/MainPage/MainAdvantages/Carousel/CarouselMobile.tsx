@@ -10,14 +10,14 @@ const CarouselMobile: React.FC<CarouselProps> = ({ items }) => {
 	return (
 		<div className="main-advantages__carousel--mobile">
 			<Carousel withDots buttonPrev={<PrevArrowSVG />} buttonNext={<NextArrowSVG />}>
-				{items.map(({ itemCount, itemDesc, itemName, itemTitle, image: { childImageSharp: { fluid } } }) => (
-					<div key={itemName} className="main-advantages__carousel-item-wrapper">
+				{items.map(({ itemImg: { value: { childImageSharp: { fluid } } }, itemSubTitle, itemText, itemTitle }, i) => (
+					<div key={i} className="main-advantages__carousel-item-wrapper">
 						<div className="main-advantages__carousel-item-info">
-							<p className="main-advantages__carousel-item-info-name">{itemName}</p>
-							<p className="main-advantages__carousel-item-info-count">{itemCount}</p>
+							<p className="main-advantages__carousel-item-info-name">{itemTitle.value}</p>
+							<p className="main-advantages__carousel-item-info-count">{`0${i + 1}/0${items.length}`}</p>
 						</div>
-						<p className="main-advantages__carousel-item-title">{itemTitle}</p>
-						<Paragraph>{itemDesc}</Paragraph>
+						<p className="main-advantages__carousel-item-title">{itemSubTitle.value}</p>
+						<Paragraph>{itemText.value}</Paragraph>
 						<Image className="main-advantages__carousel-item-img" fluid={fluid} />
 					</div>
 				))}

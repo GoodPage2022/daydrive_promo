@@ -8,6 +8,7 @@ import Container from '../../Container/Container';
 //svg
 import AppleSVG from '../../../images/svg/mainPage/apple.inline.svg';
 import PlaystoreSVG from '../../../images/svg/mainPage//playstore.inline.svg';
+import { PromoQueryTypes } from './Types';
 
 const MAIN_PROMO_IMG_QUERY = graphql`
 	query promoImgQuery {
@@ -19,6 +20,21 @@ const MAIN_PROMO_IMG_QUERY = graphql`
 				}
 			}
 		}
+		allCockpitMainPage {
+			edges {
+				node {
+					promoDesc {
+						value
+					}
+					promoSubTitle {
+						value
+					}
+					promoTitle {
+						value
+					}
+				}
+			}
+		}
 	}
 `;
 
@@ -27,17 +43,18 @@ const MainPromo: React.FC = () => {
 		file: {
 			childImageSharp: { fluid },
 		},
+		allCockpitMainPage: { edges },
 	} = useStaticQuery(MAIN_PROMO_IMG_QUERY);
+
+	const PromoQueryText: PromoQueryTypes = edges[0].node;
 
 	return (
 		<section className="main-promo">
 			<Container>
 				<div className="main-promo__wrapper">
-					<h4 className="main-promo__subtitle">больше чем приложение</h4>
-					<h1 className="main-promo__title">мобильное решение для вашего авто</h1>
-					<p className="main-promo__desc">
-						Не следует, однако забывать, что консультация с широким активом требуют определения и уточнения модели развития
-					</p>
+					<h4 className="main-promo__subtitle">{PromoQueryText.promoSubTitle.value}</h4>
+					<h1 className="main-promo__title">{PromoQueryText.promoTitle.value}</h1>
+					<p className="main-promo__desc">{PromoQueryText.promoDesc.value}</p>
 					<div className="main-promo__downloads">
 						<a className="main-promo__downloads-link">
 							<AppleSVG className="main-promo__downloads-link-svg" />

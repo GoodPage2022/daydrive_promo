@@ -3,13 +3,40 @@ import './MainFaq.scss';
 //components
 import { mainFaqTabs } from '../../../constants/mainFaqTabs';
 import Container from '../../Container/Container';
-import Paragraph from '../../Paragraph/Paragraph';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import Tabs, { TabHeader } from '../../Tabs/Tabs';
+import { graphql, useStaticQuery } from 'gatsby';
+import { faqTypesFaq } from './Types';
+
+const FAQ_QUERY = graphql`
+	query faqQuery {
+		allCockpitFaq {
+			edges {
+				node {
+					text {
+						value
+					}
+					title {
+						value
+					}
+					forUser {
+						value
+					}
+				}
+			}
+		}
+	}
+`;
 
 const MainFaq: React.FC = () => {
 	const [activeTab, setActiveTab] = useState(0);
 	const [activeQuestion, setActiveQuestion] = useState<number | null>(null);
+	const [isTabForUser, setTabForUser] = useState<boolean>(true);
+
+	const {
+		allCockpitFaq: { edges },
+	} = useStaticQuery(FAQ_QUERY);
+	const faqTabs: faqTypesFaq[] = edges;
 
 	return (
 		<div className="main-faq" id="faq">
@@ -23,6 +50,7 @@ const MainFaq: React.FC = () => {
 								onItemClicked={() => {
 									setActiveTab(id);
 									setActiveQuestion(null);
+									setTabForUser(title === 'Для пользователя');
 								}}
 								isActive={activeTab === id}
 							>
@@ -31,19 +59,21 @@ const MainFaq: React.FC = () => {
 						))}
 					</div>
 					<div className="tabs__content">
-						{mainFaqTabs[activeTab].faqList.map(({ id, faqQuestion, faqAnswer }, i) => (
-							<div
-								key={id}
-								className={`tabs__content-item ${activeQuestion === i ? 'tabs__content-item--active' : ''}`}
-								onClick={() => setActiveQuestion(activeQuestion === i ? null : i)}
-							>
-								<div className="tabs__content-item-toggler-wrapper">
-									<div className="tabs__content-item-toggler"></div>
-									<p className="tabs__content-item-title">{faqQuestion}</p>
+						{faqTabs
+							.filter(({ node: { forUser } }) => (isTabForUser ? forUser.value : !forUser.value))
+							.map(({ node: { text, title } }, i) => (
+								<div
+									key={i}
+									className={`tabs__content-item ${activeQuestion === i ? 'tabs__content-item--active' : ''}`}
+									onClick={() => setActiveQuestion(activeQuestion === i ? null : i)}
+								>
+									<div className="tabs__content-item-toggler-wrapper">
+										<div className="tabs__content-item-toggler"></div>
+										<p className="tabs__content-item-title">{title.value}</p>
+									</div>
+									<div className="tabs__content-item-text" dangerouslySetInnerHTML={{ __html: text.value }} />
 								</div>
-								<Paragraph>{faqAnswer}</Paragraph>
-							</div>
-						))}
+							))}
 					</div>
 				</Tabs>
 			</Container>

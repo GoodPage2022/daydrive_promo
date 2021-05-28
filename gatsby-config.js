@@ -35,6 +35,16 @@ module.exports = {
 			}
 		},
 		{
+			resolve: '@fika/gatsby-source-cockpit',
+			options: {
+				token: 'f6d6fa96d90576f8ca7e921c422dde',
+				baseUrl: 'http://157.230.99.45:4200', // (1
+				locales: [],
+				collections: [], // (3)
+				singletons: [] // (4)
+			}
+		},
+		{
 			resolve: 'gatsby-plugin-eslint',
 			options: {
 				test: /\.ts$|\.tsx$/,

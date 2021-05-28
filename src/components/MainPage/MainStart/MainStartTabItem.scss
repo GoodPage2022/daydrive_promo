@@ -30,7 +30,7 @@
 			font-size: $fs-17;
 			line-height: 150%;
 		}
-		& .paragraph {
+		&-text {
 			margin-top: 10px;
 		}
 	}
@@ -39,7 +39,7 @@
 @media screen and(min-width:768px) {
 	.main-start__content {
 		&-item {
-			& .paragraph {
+			&-text {
 				text-align: start;
 			}
 			&-count {
@@ -86,7 +86,7 @@
 					font-size: $fs-53;
 				}
 			}
-			& .paragraph {
+			&-text {
 				margin-top: 25px;
 			}
 			&:nth-of-type(2n + 1) {

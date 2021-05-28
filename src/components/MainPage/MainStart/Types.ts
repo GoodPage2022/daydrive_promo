@@ -3,3 +3,11 @@ export type MainStartTabItemsProps = {
 	title: string;
 	desc: string;
 };
+
+export type howToStartArrayType = {
+	node: {
+		forIphone: { value: boolean };
+		text: { value: string };
+		title: { value: string };
+	};
+};

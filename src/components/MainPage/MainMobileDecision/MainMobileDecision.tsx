@@ -2,13 +2,12 @@ import React from 'react';
 import Image from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import './MainMobileDecision.scss';
-//components
-import Paragraph from '../../Paragraph/Paragraph';
 //svg
 import AppleSVG from '../../../images/svg/mainPage/apple.inline.svg';
 import PlaystoreSVG from '../../../images/svg/mainPage//playstore.inline.svg';
 import CircleSVG from '../../../images/svg/mainPage/mainMobileDecision/circle.inline.svg';
 import Circle1SVG from '../../../images/svg/mainPage/mainMobileDecision/circle1.inline.svg';
+import { MobileDecisionType } from './Types';
 
 const MOBILE_DECISION_IMAGE_QUERY = graphql`
 	query decisionImageQuery {
@@ -20,6 +19,21 @@ const MOBILE_DECISION_IMAGE_QUERY = graphql`
 				}
 			}
 		}
+		allCockpitMainPage {
+			edges {
+				node {
+					downloadSubTitle {
+						value
+					}
+					downloadText {
+						value
+					}
+					downloadTitle {
+						value
+					}
+				}
+			}
+		}
 	}
 `;
 
@@ -28,19 +42,19 @@ const MainMobileDecision = () => {
 		file: {
 			childImageSharp: { fluid },
 		},
+		allCockpitMainPage: { edges },
 	} = useStaticQuery(MOBILE_DECISION_IMAGE_QUERY);
+
+	const mobileDecisionText: MobileDecisionType = edges[0];
 
 	return (
 		<section className="mobile-decision" id="download">
 			<CircleSVG className="mobile-decision__svg mobile-decision__svg--first" />
 			<Circle1SVG className="mobile-decision__svg mobile-decision__svg--second" />
-
 			<div className="mobile-decision__content">
-				<h3 className="mobile-decision__content-subtitle">БОЛЬШЕ ЧЕМ ПРИЛОЖЕНИЕ</h3>
-				<h2 className="mobile-decision__content-title">МОБИЛЬНОЕ РЕШЕНИЕ ДЛЯ ВАШЕГО АВТО</h2>
-				<Paragraph>
-					Не следует, однако забывать, что консультация с широким активом требуют определения и уточнения модели развития
-				</Paragraph>
+				<h3 className="mobile-decision__content-subtitle">{mobileDecisionText.node.downloadSubTitle.value}</h3>
+				<h2 className="mobile-decision__content-title">{mobileDecisionText.node.downloadTitle.value}</h2>
+				<div className="mobile-decision__content-text" dangerouslySetInnerHTML={{ __html: mobileDecisionText.node.downloadText.value }} />
 				<div className="main-promo__downloads">
 					<a className="main-promo__downloads-link">
 						<AppleSVG className="main-promo__downloads-link-svg" />

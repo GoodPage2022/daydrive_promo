@@ -99,10 +99,10 @@ const TryCarousel = () => {
 				<Carousel slides={slides} goToSlide={slide} animationConfig={config.gentle} offsetRadius={1} showNavigation={false} />
 			)}
 			<div className="carousel-about__arrows">
-				<div onClick={() => goToSlide((prev) => prev + 1)}>
+				<div onClick={() => goToSlide((prev) => prev - 1)}>
 					<PrevArrowSVG />
 				</div>
-				<div onClick={() => goToSlide((prev) => prev - 1)}>
+				<div onClick={() => goToSlide((prev) => prev + 1)}>
 					<NextArrowSVG />
 				</div>
 			</div>

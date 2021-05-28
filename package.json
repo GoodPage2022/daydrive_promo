@@ -7,14 +7,14 @@
 	"main": "n/a",
 	"scripts": {
 		"build": "gatsby build",
-		"clean": "rimraf public",
 		"dev": "gatsby develop -H 0.0.0.0",
 		"format": "prettier --write \"src/**/*.{ts,tsx}\"",
 		"lint-css": "stylelint \"src/**/*.{scss,css}\" --fix",
 		"lint": "eslint  \"src/**/*.{ts,tsx}\"",
 		"start": "npm run dev",
 		"test": "npm run type-check && npm run lint",
-		"type-check": "tsc"
+		"type-check": "tsc",
+		"clean": "gatsby clean"
 	},
 	"husky": {
 		"hooks": {
@@ -26,6 +26,7 @@
 		"node": ">=10.0.0"
 	},
 	"dependencies": {
+		"@fika/gatsby-source-cockpit": "^1.1.2",
 		"classnames": "^2.2.6",
 		"dotenv": "^8.2.0",
 		"gatsby": "^3.2.0",
@@ -44,11 +45,11 @@
 		"gatsby-source-filesystem": "^3.2.0",
 		"gatsby-transformer-remark": "^3.2.0",
 		"gatsby-transformer-sharp": "^3.2.0",
-		"react-spring-3d-carousel": "1.2.0",
 		"react": "^16.14.0",
 		"react-dom": "^16.13.1",
 		"react-helmet": "^5.2.1",
-		"react-inlinesvg": "^2.0.1"
+		"react-inlinesvg": "^2.0.1",
+		"react-spring-3d-carousel": "1.2.0"
 	},
 	"devDependencies": {
 		"@types/classnames": "^2.2.10",

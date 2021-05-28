@@ -11,16 +11,16 @@ const CarouselMobile: React.FC<CarouselProps> = ({ items }) => {
 	return (
 		<div className="main-advantages__carousel--mac">
 			<Carousel withDots buttonPrev={<PrevArrowSVG />} buttonNext={<NextArrowSVG />}>
-				{chunk(items, 2).map((arr) => (
-					<div className="main-advantages__carousel-row" key={arr[0].itemCount}>
-						{arr.map(({ itemCount, itemDesc, itemName, itemTitle, image: { childImageSharp: { fluid } } }) => (
-							<div key={itemName} className="main-advantages__carousel-item-wrapper">
+				{chunk(items, 2).map((arr, i) => (
+					<div className="main-advantages__carousel-row" key={i}>
+						{arr.map(({ itemImg: { value: { childImageSharp: { fluid } } }, itemSubTitle, itemText, itemTitle }, i) => (
+							<div key={i} className="main-advantages__carousel-item-wrapper">
 								<div className="main-advantages__carousel-item-info">
-									<p className="main-advantages__carousel-item-info-name">{itemName}</p>
-									<p className="main-advantages__carousel-item-info-count">{itemCount}</p>
+									<p className="main-advantages__carousel-item-info-name">{itemTitle.value}</p>
+									<p className="main-advantages__carousel-item-info-count">asdas</p>
 								</div>
-								<p className="main-advantages__carousel-item-title">{itemTitle}</p>
-								<Paragraph>{itemDesc}</Paragraph>
+								<p className="main-advantages__carousel-item-title">{itemSubTitle.value}</p>
+								<Paragraph>{itemText.value}</Paragraph>
 								<Image className="main-advantages__carousel-item-img" fluid={fluid} />
 							</div>
 						))}

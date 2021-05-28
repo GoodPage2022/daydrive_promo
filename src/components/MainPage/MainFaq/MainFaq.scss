@@ -54,10 +54,14 @@
 					font-size: $fs-17;
 					line-height: 150%;
 				}
-				& .paragraph {
+				&-text {
 					max-width: 970px;
 					margin-top: 15px;
 					margin-left: 50px;
+					color: $dark-grayish-blue-color;
+					font-weight: $fw-300;
+					font-size: $fs-17;
+					line-height: 150%;
 				}
 				&--active {
 					height: auto;
