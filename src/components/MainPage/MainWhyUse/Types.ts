@@ -5,3 +5,13 @@ export type usefullTabsType = {
 		text: { value: string };
 	};
 };
+
+export type MainAdvantageInfoTypes = {
+	icon: {
+		value: string;
+	};
+	text: {
+		value: string;
+	};
+	id: string;
+};

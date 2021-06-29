@@ -2,6 +2,7 @@
 	padding-top: 70px;
 	& .section-header {
 		padding: 0 20px;
+		font-family: $font-family-exo;
 	}
 
 	.carousel {
@@ -54,6 +55,11 @@
 			display: none;
 		}
 		&-item {
+			&-wrapper {
+				& .paragraph {
+					display: none;
+				}
+			}
 			&-info {
 				display: flex;
 				align-items: center;
@@ -63,6 +69,7 @@
 					color: $white-color;
 					font-weight: $fw-600;
 					font-size: $fs-16;
+					font-family: $font-family-exo;
 					line-height: 150%;
 					text-transform: uppercase;
 					background: linear-gradient(90deg, #279dcf 0%, #27a7cf 51.56%, #27c9cf 100%);
@@ -78,6 +85,7 @@
 				color: $dark-grayish-blue-color;
 				font-weight: $fw-600;
 				font-size: $fs-17;
+				font-family: $font-family-exo;
 				line-height: 150%;
 			}
 		}

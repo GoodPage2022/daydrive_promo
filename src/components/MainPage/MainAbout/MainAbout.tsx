@@ -2,7 +2,6 @@ import React, { Suspense, useState } from 'react';
 import './MainAbout.scss';
 //components
 import Container from '../../Container/Container';
-import Paragraph from '../../Paragraph/Paragraph';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 //svg
 import ArrowSVG from '../../../images/svg/mainPage/arrowMore.inline.svg';
@@ -46,10 +45,11 @@ const MainAbout: React.FC = () => {
 			<Container>
 				<SectionHeader>{AboutUsText.aboutUsTitle.value}</SectionHeader>
 				<div className="main-about-us__wrapper">
-					<Paragraph classNames="main-about-us__text">{AboutUsText.aboutUsDesc.value}</Paragraph>
-					<Paragraph classNames={`main-about-us__text ${detailsOpen ? 'main-about-us__text--open' : ''}`}>
-						{AboutUsText.aboutUsDescSecond.value}
-					</Paragraph>
+					<div className="main-about-us__text" dangerouslySetInnerHTML={{ __html: AboutUsText.aboutUsDesc.value }} />
+					<div
+						className={`main-about-us__text ${detailsOpen ? 'main-about-us__text--open' : ''}`}
+						dangerouslySetInnerHTML={{ __html: AboutUsText.aboutUsDescSecond.value }}
+					/>
 					<button className="main-about-us__btn-more" onClick={handleDetails}>
 						подробнее <ArrowSVG className={`main-about-us__btn-svg ${detailsOpen ? 'main-about-us__btn-svg--open' : ''}`} />
 					</button>

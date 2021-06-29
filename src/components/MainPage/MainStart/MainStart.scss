@@ -1,5 +1,8 @@
 .main-start {
 	padding: 70px 0 30px;
+	& .section-header {
+		font-family: $font-family-exo;
+	}
 	&__img-wrapper {
 		display: none;
 	}
@@ -8,6 +11,12 @@
 	}
 	& .tabs {
 		margin-top: 40px;
+
+		& .tab {
+			&__title {
+				font-family: $font-family-exo;
+			}
+		}
 
 		&__content {
 			display: flex;

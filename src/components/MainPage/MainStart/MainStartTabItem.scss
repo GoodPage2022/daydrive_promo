@@ -28,6 +28,7 @@
 			color: $dark-grayish-blue-color;
 			font-weight: $fw-700;
 			font-size: $fs-17;
+			font-family: $font-family-exo;
 			line-height: 150%;
 		}
 		&-text {
@@ -39,6 +40,8 @@
 @media screen and(min-width:768px) {
 	.main-start__content {
 		&-item {
+			min-height: 200px;
+
 			&-text {
 				text-align: start;
 			}

@@ -1,14 +1,22 @@
 .main-faq {
 	padding: 70px 0px;
 	background-color: $white-color;
+
+	& .section-header {
+		font-family: $font-family-exo;
+	}
 	& .tabs {
 		margin-top: 30px;
+		& .tab {
+			&__title {
+				font-family: $font-family-exo;
+			}
+		}
 		&__content {
 			display: grid;
 			gap: 20px;
 			margin-top: 30px;
 			&-item {
-				height: 55px;
 				overflow: hidden;
 				cursor: pointer;
 				user-select: none;
@@ -52,16 +60,23 @@
 					color: $dark-grayish-blue-color;
 					font-weight: $fw-600;
 					font-size: $fs-17;
+					font-family: $font-family-exo;
 					line-height: 150%;
 				}
 				&-text {
 					max-width: 970px;
+					height: 0px;
 					margin-top: 15px;
 					margin-left: 50px;
+					overflow: hidden;
 					color: $dark-grayish-blue-color;
 					font-weight: $fw-300;
 					font-size: $fs-17;
 					line-height: 150%;
+					&--active {
+						height: auto;
+						overflow: visible;
+					}
 				}
 				&--active {
 					height: auto;

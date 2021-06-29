@@ -26,9 +26,6 @@ const HOW_START_IMG_QUERY = graphql`
 					forIphone {
 						value
 					}
-					text {
-						value
-					}
 					title {
 						value
 					}
@@ -76,8 +73,8 @@ const MainStart: React.FC = () => {
 						<div className="tabs__content-list">
 							{howToStartArray
 								.filter(({ node: { forIphone } }) => (isTabForIphone ? forIphone.value : !forIphone.value))
-								.map(({ node: { text, title } }, i) => (
-									<MainStartTabItem key={`${i}+${title}`} count={i + 1} desc={text.value} title={title.value} />
+								.map(({ node: { title } }, i) => (
+									<MainStartTabItem key={`${i}+${title}`} count={i + 1} title={title.value} />
 								))}
 						</div>
 					</div>

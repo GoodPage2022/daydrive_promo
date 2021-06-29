@@ -9,7 +9,7 @@ export const mainAdvantageInfo = [
 	},
 	{
 		id: 1,
-		title: 'Оплата <br /> в 1 клик',
+		title: 'Оплата в одно мгновенье ',
 		icon: CardSVG,
 	},
 	{

@@ -1,0 +1,9 @@
+@import '../styles/variables.scss';
+
+@font-face {
+	font-weight: $fw-700;
+	font-family: $font-family-exo;
+	font-style: normal;
+	src: url('/fonts/exo/Exo2-Bold.ttf');
+	font-display: swap;
+}

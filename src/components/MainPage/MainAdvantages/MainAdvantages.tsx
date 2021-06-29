@@ -50,7 +50,7 @@ const MainAdvantages: React.FC = () => {
 
 	return (
 		<div className="main-advantages" id="howWork">
-			<SectionHeader>преимущества</SectionHeader>
+			<SectionHeader>Day Drive - это</SectionHeader>
 			<CarouselMobile items={advantagesItems} />
 			<CarouselMac items={advantagesItems} />
 			<CarouselDesktop items={advantagesItems} />
