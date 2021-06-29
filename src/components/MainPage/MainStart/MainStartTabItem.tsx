@@ -11,7 +11,7 @@ const MainStartTabItem: React.FC<MainStartTabItemsProps> = ({ count, title, desc
 				</div>
 				<p className="main-start__content-item-title">{title}</p>
 			</div>
-			<div className="main-start__content-item-text" dangerouslySetInnerHTML={{ __html: desc }} />
+			{desc && <div className="main-start__content-item-text" dangerouslySetInnerHTML={{ __html: desc }} />}
 		</div>
 	);
 };

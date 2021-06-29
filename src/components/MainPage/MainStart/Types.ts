@@ -1,7 +1,7 @@
 export type MainStartTabItemsProps = {
 	count: number;
 	title: string;
-	desc: string;
+	desc?: string;
 };
 
 export type howToStartArrayType = {

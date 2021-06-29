@@ -29,8 +29,9 @@
 			color: $black-color;
 			font-size: $fs-17;
 			line-height: 149.5%;
-			& p {
-				word-break: break-all;
+
+			& span {
+				word-break: break-word;
 			}
 		}
 	}

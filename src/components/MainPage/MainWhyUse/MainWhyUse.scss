@@ -2,6 +2,11 @@
 	position: relative;
 	z-index: 2;
 	padding-top: 135px;
+
+	& ul,
+	li {
+		display: none;
+	}
 	&::before {
 		position: absolute;
 		top: 75px;

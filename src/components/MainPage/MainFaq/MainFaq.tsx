@@ -71,7 +71,10 @@ const MainFaq: React.FC = () => {
 										<div className="tabs__content-item-toggler"></div>
 										<p className="tabs__content-item-title">{title.value}</p>
 									</div>
-									<div className="tabs__content-item-text" dangerouslySetInnerHTML={{ __html: text.value }} />
+									<div
+										className={`tabs__content-item-text ${activeQuestion === i ? 'tabs__content-item-text--active' : ''}`}
+										dangerouslySetInnerHTML={{ __html: text.value }}
+									/>
 								</div>
 							))}
 					</div>

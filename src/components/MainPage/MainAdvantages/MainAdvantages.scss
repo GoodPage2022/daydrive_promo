@@ -54,6 +54,11 @@
 			display: none;
 		}
 		&-item {
+			&-wrapper {
+				& .paragraph {
+					display: none;
+				}
+			}
 			&-info {
 				display: flex;
 				align-items: center;

@@ -19,7 +19,7 @@ const CarouselDesktop: React.FC<CarouselProps> = ({ items }) => {
 									<p className="main-advantages__carousel-item-info-name">{itemTitle.value}</p>
 									<p className="main-advantages__carousel-item-info-count">asdas</p>
 								</div>
-								<p className="main-advantages__carousel-item-title">{itemSubTitle.value}</p>
+								<div className="main-advantages__carousel-item-title" dangerouslySetInnerHTML={{ __html: itemSubTitle.value }} />
 								<Paragraph>{itemText.value}</Paragraph>
 								<Image className="main-advantages__carousel-item-img" fluid={fluid} />
 							</div>

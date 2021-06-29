@@ -6,9 +6,8 @@ import Container from '../../Container/Container';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import Tabs, { TabHeader } from '../../Tabs/Tabs';
 import { mainAdvantageTabs } from '../../../constants/mainAdvantageTabs';
-import { mainAdvantageInfo } from '../../../constants/mainAdvantageInfo';
 import { graphql, useStaticQuery } from 'gatsby';
-import { usefullTabsType } from './Types';
+import { MainAdvantageInfoTypes, usefullTabsType } from './Types';
 
 const USEFULL_QUERY = graphql`
 	query usefullQuery {
@@ -27,6 +26,17 @@ const USEFULL_QUERY = graphql`
 				}
 			}
 		}
+		allCockpitUsefullAppInfo {
+			nodes {
+				icon {
+					value
+				}
+				text {
+					value
+				}
+				id
+			}
+		}
 	}
 `;
 
@@ -35,7 +45,11 @@ const MainAdvantage = () => {
 	const [isTabForUser, setTabForUser] = useState<boolean>(true);
 	const {
 		allCockpitUsefullApp: { edges },
+		allCockpitUsefullAppInfo: { nodes: MainAdvantageInfo },
 	} = useStaticQuery(USEFULL_QUERY);
+
+	console.log(MainAdvantageInfo);
+	const mainAdvantagePoints: MainAdvantageInfoTypes[] = MainAdvantageInfo;
 	const usefullTabs: usefullTabsType[] = edges;
 	const Icon = mainAdvantageTabs[activeTab].icon;
 	const actualArray = usefullTabs.filter(({ node: { forUser } }) => (isTabForUser ? forUser.value : !forUser.value));
@@ -70,12 +84,10 @@ const MainAdvantage = () => {
 				</Container>
 
 				<div className="main-why-use__info">
-					{mainAdvantageInfo.map(({ id, title, icon: Icon }) => (
+					{mainAdvantagePoints.map(({ text, icon, id }) => (
 						<div key={id} className="main-why-use__info-item">
-							<div className="main-why-use__info-item-svg">
-								<Icon />
-							</div>
-							<h5 dangerouslySetInnerHTML={{ __html: title }} className="main-why-use__info-item-title" />
+							<div className="main-why-use__info-item-svg" dangerouslySetInnerHTML={{ __html: icon.value }} />
+							<h5 dangerouslySetInnerHTML={{ __html: text.value }} className="main-why-use__info-item-title" />
 						</div>
 					))}
 				</div>

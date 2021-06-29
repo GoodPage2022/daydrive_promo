@@ -39,6 +39,8 @@
 @media screen and(min-width:768px) {
 	.main-start__content {
 		&-item {
+			min-height: 200px;
+
 			&-text {
 				text-align: start;
 			}
