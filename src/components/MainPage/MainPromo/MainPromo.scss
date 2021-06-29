@@ -129,7 +129,7 @@
 @media screen and(min-width:1800px) {
 	.main-promo {
 		&__wrapper {
-			max-width: 880px;
+			max-width: 1000px;
 		}
 		&__subtitle {
 			font-size: $fs-30;
@@ -137,6 +137,9 @@
 		&__title {
 			max-width: unset;
 			font-size: $fs-60;
+		}
+		&__desc {
+			max-width: 800px;
 		}
 		&__img {
 			transform: unset;
