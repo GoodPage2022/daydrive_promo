@@ -128,7 +128,9 @@
 			grid-column: 3;
 			margin: unset;
 			&-phone {
-				margin: unset;
+				&:nth-of-type(1) {
+					margin: unset;
+				}
 			}
 			&-address {
 				margin: unset;
