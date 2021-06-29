@@ -6,6 +6,10 @@
 	ol {
 		padding-left: 20px;
 	}
+
+	& .section-header {
+		font-family: $font-family-exo;
+	}
 	&::before {
 		position: absolute;
 		top: -40px;

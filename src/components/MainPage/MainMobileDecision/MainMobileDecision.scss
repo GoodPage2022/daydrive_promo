@@ -1,9 +1,11 @@
 .mobile-decision {
 	position: relative;
+
 	&__svg {
 		position: absolute;
 		display: none;
 	}
+
 	&__content {
 		padding: 70px 20px;
 		&-subtitle {
@@ -21,6 +23,7 @@
 			color: $very-dark-blue-color;
 			font-weight: $fw-700;
 			font-size: $fs-22;
+			font-family: $font-family-exo;
 			line-height: 150%;
 			text-transform: uppercase;
 		}

@@ -21,8 +21,11 @@ const Footer: React.FC = () => {
 						))}
 					</nav>
 					<div className="footer__contacts">
-						<a href="tel:+380685586142" className="footer__contacts-phone">
-							+38 (068) 558 61 42
+						<a href="mailto:sergey@daydrive.com.ua" className="footer__contacts-phone">
+							sergey@daydrive.com.ua
+						</a>
+						<a href="tel:+380675725131" className="footer__contacts-phone">
+							+38 (067) 572 51 31
 						</a>
 						<p className="footer__contacts-address">Украина, Киев ул. Коломыйский переулок 20</p>
 					</div>
