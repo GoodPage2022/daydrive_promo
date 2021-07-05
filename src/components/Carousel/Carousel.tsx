@@ -14,9 +14,14 @@ const Carousel: React.FC<ICarousel> = ({
 	withDots,
 	callback = () => true,
 	withCounters,
+	initialSlide,
 }): JSX.Element => {
 	const carousel = useRef<any>();
-	const [slide, setSlide] = useState(0);
+	const [slide, setSlide] = useState(initialSlide ? initialSlide : 0);
+
+	useEffect(() => {
+		setSlide(initialSlide);
+	}, [initialSlide]);
 
 	const handleNextSlide = (): void => {
 		if (slide + 1 < children.length) setSlide(slide + 1);

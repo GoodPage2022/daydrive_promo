@@ -6,4 +6,5 @@ export interface ICarousel {
 	withDots?: boolean;
 	withCounters?: boolean;
 	callback?: any;
+	initialSlide?: number;
 }

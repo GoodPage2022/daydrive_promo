@@ -46,8 +46,6 @@ const MainAdvantages: React.FC = () => {
 		},
 	} = useStaticQuery(ABOUT_ADVANTAGES_QUERY);
 
-	console.log(value);
-
 	const advantagesItems: AdvatagesItemsType[] = value;
 
 	return (

@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
 							<div>
 								<p className="footer__downloads-link-text">Скачать в </p>
 								<p className="footer__downloads-link-text">
-									<strong>google play</strong>
+									<strong>App Store</strong>
 								</p>
 							</div>
 						</a>
