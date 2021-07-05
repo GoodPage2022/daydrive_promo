@@ -87,6 +87,10 @@
 				font-size: $fs-17;
 				font-family: $font-family-exo;
 				line-height: 150%;
+
+				& ul {
+					padding-left: 20px;
+				}
 			}
 		}
 	}

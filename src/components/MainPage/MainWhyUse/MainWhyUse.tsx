@@ -48,7 +48,6 @@ const MainAdvantage = () => {
 		allCockpitUsefullAppInfo: { nodes: MainAdvantageInfo },
 	} = useStaticQuery(USEFULL_QUERY);
 
-	console.log(MainAdvantageInfo);
 	const mainAdvantagePoints: MainAdvantageInfoTypes[] = MainAdvantageInfo;
 	const usefullTabs: usefullTabsType[] = edges;
 	const Icon = mainAdvantageTabs[activeTab].icon;
