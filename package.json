@@ -2,7 +2,9 @@
 	"name": "day-drive-promo",
 	"version": "1.0.0",
 	"private": true,
-	"keywords": [ "gatsby" ],
+	"keywords": [
+		"gatsby"
+	],
 	"license": "MIT",
 	"main": "n/a",
 	"scripts": {
@@ -80,7 +82,10 @@
 		"typescript": "^3.8.3"
 	},
 	"stylelint": {
-		"extends": [ "stylelint-config-recommended", "stylelint-config-rational-order" ],
+		"extends": [
+			"stylelint-config-recommended",
+			"stylelint-config-rational-order"
+		],
 		"plugins": [
 			"stylelint-order",
 			"stylelint-scss",
@@ -102,9 +107,18 @@
 				}
 			],
 			"sh-waqar/declaration-use-variable": [
-				[ "/color/", "font-size", "font-family", "font-weight" ],
+				[
+					"/color/",
+					"font-size",
+					"font-family",
+					"font-weight"
+				],
 				{
-					"ignoreValues": [ "transparent", "inherit", "/regexForspecialFunc/" ]
+					"ignoreValues": [
+						"transparent",
+						"inherit",
+						"/regexForspecialFunc/"
+					]
 				}
 			],
 			"order/properties-order": [],
@@ -118,7 +132,9 @@
 			"selector-type-no-unknown": [
 				true,
 				{
-					"ignore": [ "custom-elements" ]
+					"ignore": [
+						"custom-elements"
+					]
 				}
 			],
 			"no-descending-specificity": true,

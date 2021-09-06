@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
 						<a href="tel:+380675725131" className="footer__contacts-phone">
 							+38 (067) 572 51 31
 						</a>
-						<p className="footer__contacts-address">Украина, Киев ул. Коломыйский переулок 20</p>
+						<p className="footer__contacts-address">Украина, г. Киев, пер. Коломыйский, 20</p>
 					</div>
 					<div className="footer__downloads">
 						<a className="footer__downloads-link">
