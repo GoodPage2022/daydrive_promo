@@ -10,8 +10,44 @@
 	&_text {
 		list-style: none;
 	}
+}
 
-	&_li {
-		margin-top: 10px;
+.privacy_container {
+	margin: 40px 100px;
+
+	h1,
+	h3 {
+		text-align: center;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	.parent_li {
+		margin-top: 15px;
+
+		li {
+			margin-left: 15px;
+		}
+	}
+
+	a {
+		color: #27c9cf;
+		transition: 0.4s;
+
+		&:hover {
+			color: #1c8488;
+		}
+	}
+}
+
+@media (max-width: 990px) {
+	.privacy_container {
+		margin: 40px 30px;
+
+		h1 {
+			font-size: 24px;
+		}
 	}
 }
