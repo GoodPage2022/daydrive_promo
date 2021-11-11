@@ -22,10 +22,10 @@ const Footer: React.FC = () => {
 					</nav>
 					<div className="footer__contacts">
 						<a href="mailto:sergey@daydrive.com.ua" className="footer__contacts-phone">
-							sergey@daydrive.com.ua
+							team@daydrive.com.ua
 						</a>
 						<a href="tel:+380675725131" className="footer__contacts-phone">
-							+38 (067) 572 51 31
+							+38 (099) 482 00 32
 						</a>
 						<p className="footer__contacts-address">Украина, г. Киев, пер. Коломыйский, 20</p>
 					</div>
