@@ -25,7 +25,7 @@
 		}
 	},
 	"engines": {
-		"node": ">=10.0.0"
+		"node": ">=18.0.0"
 	},
 	"dependencies": {
 		"@fika/gatsby-source-cockpit": "^1.1.2",
@@ -47,16 +47,16 @@
 		"gatsby-source-filesystem": "^3.2.0",
 		"gatsby-transformer-remark": "^3.2.0",
 		"gatsby-transformer-sharp": "^3.2.0",
-		"react": "^16.14.0",
-		"react-dom": "^16.13.1",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
 		"react-helmet": "^5.2.1",
 		"react-inlinesvg": "^2.0.1",
 		"react-spring-3d-carousel": "1.2.0"
 	},
 	"devDependencies": {
 		"@types/classnames": "^2.2.10",
-		"@types/node": "^12.12.31",
-		"@types/react": "^16.14.0",
+		"@types/node": "^18.0.0",
+		"@types/react": "^18.0.14",
 		"@types/react-dom": "^16.9.5",
 		"@types/react-helmet": "^5.0.15",
 		"@typescript-eslint/eslint-plugin": "^4.20.0",
@@ -69,8 +69,8 @@
 		"firebase-tools": "^9.0.1",
 		"gatsby-plugin-eslint": "^3.0.0",
 		"husky": "^3.1.0",
-		"node-sass": "^4.13.1",
 		"prettier": "^2.2.1",
+		"sass": "^1.53.0",
 		"stylelint": "^13.2.1",
 		"stylelint-config-rational-order": "^0.1.2",
 		"stylelint-config-standard": "^20.0.0",
