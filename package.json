@@ -68,7 +68,6 @@
 		"eslint-plugin-prettier": "^3.1.2",
 		"firebase-tools": "^9.0.1",
 		"gatsby-plugin-eslint": "^3.0.0",
-		"husky": "^3.1.0",
 		"prettier": "^2.2.1",
 		"sass": "^1.53.0",
 		"stylelint": "^13.2.1",

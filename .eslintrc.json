@@ -23,6 +23,7 @@
 	},
 	"plugins": ["react", "@typescript-eslint"],
 	"rules": {
+		"prettier/prettier": 0,
 		"react/prop-types": 0,
 		"indent": [
 			"error",
@@ -36,6 +37,5 @@
 		"linebreak-style": ["error", "unix"],
 		"quotes": ["error", "single"],
 		"semi": ["error", "always"],
-		"prettier/prettier": ["error", {}, { "usePrettierrc": true }]
 	}
 }
