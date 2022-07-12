@@ -11,7 +11,7 @@ import { MainAdvantageInfoTypes, usefullTabsType } from './Types';
 
 const USEFULL_QUERY = graphql`
 	query usefullQuery {
-		allCockpitUsefullApp {
+		allCockpitUsefullApp(filter: {lang: { eq: "ua" }}) {
 			edges {
 				node {
 					text {
@@ -26,7 +26,7 @@ const USEFULL_QUERY = graphql`
 				}
 			}
 		}
-		allCockpitUsefullAppInfo {
+		allCockpitUsefullAppInfo(filter: {lang: { eq: "ua" }}) {
 			nodes {
 				icon {
 					value
@@ -56,7 +56,7 @@ const MainAdvantage = () => {
 		<section className="main-why-use" id="useful">
 			<div className="main-why-use__wrapper">
 				<Container>
-					<SectionHeader>ЧЕМ ПОЛЕЗНО ПРИЛОЖЕНИЕ?</SectionHeader>
+					<SectionHeader>ЧИМ КОРИСНИЙ ДОДАТОК?</SectionHeader>
 					<Tabs>
 						<div className="tabs__header">
 							{mainAdvantageTabs.map(({ id, title }) => (

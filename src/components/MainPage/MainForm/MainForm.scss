@@ -3,6 +3,7 @@
 	background-color: $white-color;
 	&__form {
 		display: flex;
+		margin-top: 44px;
 		flex-direction: column;
 		padding: 30px 20px;
 		background-color: $bg-form-color;
@@ -71,9 +72,12 @@
 
 @media screen and (min-width: 768px) {
 	.main-form {
-		display: flex;
+		display: block;
 		align-items: center;
 		padding: 100px 30px;
+		&__wrapper {
+			display: flex;
+		}
 		&__form {
 			max-width: 410px;
 			padding: 28px 25px 54px;

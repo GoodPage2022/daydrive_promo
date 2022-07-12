@@ -4,12 +4,12 @@ import ForBuisnessSVG from '../images/svg/mainPage/mainAdvantage/mainAdvantageSe
 export const mainAdvantageTabs = [
 	{
 		id: 0,
-		title: 'Для пользователя',
+		title: 'Для користувача',
 		icon: ForUserSVG,
 	},
 	{
 		id: 1,
-		title: 'Для бизнеса',
+		title: 'Для бізнесу',
 		icon: ForBuisnessSVG,
 	},
 ];
