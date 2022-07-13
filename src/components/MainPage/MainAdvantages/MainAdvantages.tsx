@@ -47,10 +47,10 @@ const MainAdvantages: React.FC = () => {
 	} = useStaticQuery(ABOUT_ADVANTAGES_QUERY);
 
 	const advantagesItems: AdvatagesItemsType[] = value;
-
+	
 	return (
 		<div className="main-advantages" id="howWork">
-			<SectionHeader>Day Drive - это</SectionHeader>
+			<SectionHeader>Що є в додатку?</SectionHeader>
 			<CarouselMobile items={advantagesItems} />
 			<CarouselMac items={advantagesItems} />
 			<CarouselDesktop items={advantagesItems} />

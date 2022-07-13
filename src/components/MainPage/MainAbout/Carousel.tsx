@@ -30,23 +30,24 @@ const TryCarousel = () => {
 	const {
 		allFile: { nodes },
 	}: MainAboutQueryTypes = useStaticQuery(MAIN_ABOUT_US_QUERY);
+	console.log(nodes);
 
 	const slides = [
 		{
 			key: '0',
-			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[3].childImageSharp.fluid} alt="1" />,
+			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[0].childImageSharp.fluid} alt="1" />,
 		},
 		{
 			key: '1',
-			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[0].childImageSharp.fluid} alt="2" />,
+			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[1].childImageSharp.fluid} alt="2" />,
 		},
 		{
 			key: '2',
-			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[1].childImageSharp.fluid} alt="3" />,
+			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[2].childImageSharp.fluid} alt="3" />,
 		},
 		{
 			key: '3',
-			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[2].childImageSharp.fluid} alt="1" />,
+			content: <Image imgStyle={{ objectFit: 'contain' }} fluid={nodes[3].childImageSharp.fluid} alt="4" />,
 		},
 	].map((slide, idx) => {
 		return {

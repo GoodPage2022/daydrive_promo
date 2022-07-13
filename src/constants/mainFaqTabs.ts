@@ -1,7 +1,7 @@
 export const mainFaqTabs = [
 	{
 		id: 0,
-		title: 'Для пользователя',
+		title: 'Для користувача',
 		faqList: [
 			{
 				id: 1,
@@ -31,7 +31,7 @@ export const mainFaqTabs = [
 	},
 	{
 		id: 1,
-		title: 'Для бизнеса',
+		title: 'Для бізнесу',
 		faqList: [
 			{
 				id: 5,

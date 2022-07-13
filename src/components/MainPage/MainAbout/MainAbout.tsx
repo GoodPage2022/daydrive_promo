@@ -12,7 +12,7 @@ const Carousel = React.lazy(() => import('./Carousel'));
 
 const ABOUT_US_QUERY = graphql`
 	query aboutUsQuery {
-		allCockpitMainPage {
+		allCockpitMainPage(filter: {lang: { eq: "ua" }}) {
 			edges {
 				node {
 					aboutUsDesc {

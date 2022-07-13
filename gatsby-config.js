@@ -39,7 +39,7 @@ module.exports = {
 			options: {
 				token: 'f6d6fa96d90576f8ca7e921c422dde',
 				baseUrl: 'http://157.230.99.45:4200', // (1
-				locales: [],
+				locales: ['ua'],
 				collections: [], // (3)
 				singletons: [] // (4)
 			}

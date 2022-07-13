@@ -34,6 +34,19 @@
 	.main-start {
 		padding: 100px 0px;
 		& .tabs {
+			position: relative;
+			&::before {
+				position: absolute;
+				left: 50%;
+    		transform: translate(-50%, 0);
+				background: url(../../../images/cercle.png);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: 460px;
+    		height: 500px;
+				content: '';
+			}
 			&__header {
 				max-width: 350px;
 			}
@@ -50,10 +63,10 @@
 			position: absolute;
 			z-index: 1;
 			display: block;
-
+			top: 5%;
 			& .gatsby-image-wrapper {
-				width: 380px;
-				height: 445px;
+				width: 183px;
+				height: 372px;
 			}
 		}
 		&__img {
@@ -66,6 +79,19 @@
 	.main-start {
 		padding: 100px 0px 140px;
 		& .tabs {
+
+			&::before {
+				position: absolute;
+				left: 50%;
+    		transform: translate(-50%, 0);
+				background: url(../../../images/cercle.png);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: 600px;
+				height: 600px;
+				content: '';
+			}
 			&__header {
 				max-width: 430px;
 			}
@@ -82,8 +108,8 @@
 			top: calc(50% - 317.5px);
 
 			& .gatsby-image-wrapper {
-				width: 635px;
-				height: 740px;
+				width: 300.69px;
+				height: 600px;
 			}
 		}
 	}
@@ -94,6 +120,18 @@
 		padding: 100px 0px 240px;
 
 		.tabs {
+			&::before {
+				position: absolute;
+				left: 50%;
+    		transform: translate(-50%, 0);
+				background: url(../../../images/cercle.png);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: 715px;
+				height: 600px;
+				content: '';
+			}
 			margin-top: 60px;
 			&__content {
 				&-list {
@@ -105,8 +143,8 @@
 			top: calc(50% - 340px);
 
 			& .gatsby-image-wrapper {
-				width: 720px;
-				height: 840px;
+				width: 359.69px;
+				height: 729.1px;
 			}
 		}
 	}
