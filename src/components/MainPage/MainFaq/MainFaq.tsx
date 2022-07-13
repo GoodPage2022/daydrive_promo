@@ -10,7 +10,7 @@ import { faqTypesFaq } from './Types';
 
 const FAQ_QUERY = graphql`
 	query faqQuery {
-		allCockpitFaq {
+		allCockpitFaq(filter: {lang: { eq: "ua" }}) {
 			edges {
 				node {
 					text {
@@ -41,7 +41,7 @@ const MainFaq: React.FC = () => {
 	return (
 		<div className="main-faq" id="faq">
 			<Container>
-				<SectionHeader>частые вопросы</SectionHeader>
+				<SectionHeader>ЧАСТІ ПИТАННЯ</SectionHeader>
 				<Tabs>
 					<div className="tabs__header">
 						{mainFaqTabs.map(({ id, title }) => (

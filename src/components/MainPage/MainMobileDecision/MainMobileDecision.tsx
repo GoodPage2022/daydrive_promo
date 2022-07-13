@@ -19,7 +19,7 @@ const MOBILE_DECISION_IMAGE_QUERY = graphql`
 				}
 			}
 		}
-		allCockpitMainPage {
+		allCockpitMainPage(filter: {lang: { eq: "ua" }}) {
 			edges {
 				node {
 					downloadSubTitle {
@@ -59,7 +59,7 @@ const MainMobileDecision = () => {
 					<a className="main-promo__downloads-link">
 						<AppleSVG className="main-promo__downloads-link-svg" />
 						<div>
-							<p className="main-promo__downloads-link-text">Скачать в </p>
+							<p className="main-promo__downloads-link-text">Завантажити в </p>
 							<p className="main-promo__downloads-link-text">
 								<strong>app store</strong>
 							</p>
@@ -68,7 +68,7 @@ const MainMobileDecision = () => {
 					<a className="main-promo__downloads-link">
 						<PlaystoreSVG className="main-promo__downloads-link-svg" />
 						<div>
-							<p className="main-promo__downloads-link-text">Скачать в </p>
+							<p className="main-promo__downloads-link-text">Завантажити в </p>
 							<p className="main-promo__downloads-link-text">
 								<strong>google play</strong>
 							</p>

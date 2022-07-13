@@ -8,7 +8,7 @@ const TRANSITION = 200;
 
 const Carousel: React.FC<ICarousel> = ({
 	children,
-	infinity = false,
+	infinity = true,
 	buttonPrev,
 	buttonNext,
 	withDots,

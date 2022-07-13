@@ -27,13 +27,13 @@ const Footer: React.FC = () => {
 						<a href="tel:+380675725131" className="footer__contacts-phone">
 							+38 (099) 482 00 32
 						</a>
-						<p className="footer__contacts-address">Украина, г. Киев, пер. Коломыйский, 20</p>
+						<p className="footer__contacts-address">Україна, Київ пров. Коломийський 20</p>
 					</div>
 					<div className="footer__downloads">
 						<a className="footer__downloads-link">
 							<AppleSVG className="footer__downloads-link-svg" />
 							<div>
-								<p className="footer__downloads-link-text">Скачать в </p>
+								<p className="footer__downloads-link-text">Завантажити в </p>
 								<p className="footer__downloads-link-text">
 									<strong>App Store</strong>
 								</p>
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
 						<a className="footer__downloads-link">
 							<PlaystoreSVG className="footer__downloads-link-svg" />
 							<div>
-								<p className="footer__downloads-link-text">Скачать в </p>
+								<p className="footer__downloads-link-text">Завантажити в </p>
 								<p className="footer__downloads-link-text">
 									<strong>google play</strong>
 								</p>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
 					</div>
 					<div className="footer__bottom">
 						<a className="footer__bottom-developed" href="https://goodpage.studio/" target="_blank" rel="noreferrer">
-							<p className="footer__bottom-developed-text">Сайт разработан</p>
+							<p className="footer__bottom-developed-text">Сайт розроблено</p>
 							<GpLogoSVG />
 						</a>
 						<p className="footer__bottom-copyright">Copyright © 2021 DAYDRIVE</p>
