@@ -52,6 +52,7 @@ const MainAdvantage = () => {
 	const usefullTabs: usefullTabsType[] = edges;
 	const Icon = mainAdvantageTabs[activeTab].icon;
 	const actualArray = usefullTabs.filter(({ node: { forUser } }) => (isTabForUser ? forUser.value : !forUser.value));
+	
 	return (
 		<section className="main-why-use" id="useful">
 			<div className="main-why-use__wrapper">
@@ -62,7 +63,7 @@ const MainAdvantage = () => {
 							{mainAdvantageTabs.map(({ id, title }) => (
 								<TabHeader
 									onItemClicked={() => {
-										setTabForUser(title === 'Для пользователя');
+										setTabForUser(title === 'Для користувача');
 										setActiveTab(id);
 									}}
 									isActive={activeTab === id}
