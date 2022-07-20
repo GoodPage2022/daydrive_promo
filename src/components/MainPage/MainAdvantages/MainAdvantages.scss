@@ -13,8 +13,11 @@
 				& .gatsby-image-wrapper {
 					width: 280px;
 					height: 510px;
-					margin: 0 auto;
+					margin: 0 auto 0;
 				}
+				// &-title {
+				// 	height: 220px;
+				// }
 			}
 		}
 		&-dots {
@@ -56,6 +59,9 @@
 		}
 		&-item {
 			&-wrapper {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
 				& .paragraph {
 					display: none;
 				}
@@ -87,7 +93,7 @@
 				font-size: $fs-17;
 				font-family: $font-family-exo;
 				line-height: 150%;
-
+				flex: 1;
 				& ul {
 					padding-left: 20px;
 				}
