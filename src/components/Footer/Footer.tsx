@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
 						<p className="footer__contacts-address">Україна, Київ пров. Коломийський 20</p>
 					</div>
 					<div className="footer__downloads">
-						<a className="footer__downloads-link">
+						<a className="footer__downloads-link" href='https://apps.apple.com/ru/app/daydrive/id1589477867' target='blank'>
 							<AppleSVG className="footer__downloads-link-svg" />
 							<div>
 								<p className="footer__downloads-link-text">Завантажити в </p>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
 								</p>
 							</div>
 						</a>
-						<a className="footer__downloads-link">
+						<a className="footer__downloads-link" href='https://play.google.com/store/apps/details?id=com.goodpage.daydrive' target='blank'>
 							<PlaystoreSVG className="footer__downloads-link-svg" />
 							<div>
 								<p className="footer__downloads-link-text">Завантажити в </p>

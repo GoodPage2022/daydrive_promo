@@ -56,7 +56,7 @@ const MainMobileDecision = () => {
 				<h2 className="mobile-decision__content-title">{mobileDecisionText.node.downloadTitle.value}</h2>
 				<div className="mobile-decision__content-text" dangerouslySetInnerHTML={{ __html: mobileDecisionText.node.downloadText.value }} />
 				<div className="main-promo__downloads">
-					<a className="main-promo__downloads-link">
+					<a className="main-promo__downloads-link" href='https://apps.apple.com/ru/app/daydrive/id1589477867' target='blank'>
 						<AppleSVG className="main-promo__downloads-link-svg" />
 						<div>
 							<p className="main-promo__downloads-link-text">Завантажити в </p>
@@ -65,7 +65,7 @@ const MainMobileDecision = () => {
 							</p>
 						</div>
 					</a>
-					<a className="main-promo__downloads-link">
+					<a className="main-promo__downloads-link" href='https://play.google.com/store/apps/details?id=com.goodpage.daydrive' target='blank'>
 						<PlaystoreSVG className="main-promo__downloads-link-svg" />
 						<div>
 							<p className="main-promo__downloads-link-text">Завантажити в </p>
