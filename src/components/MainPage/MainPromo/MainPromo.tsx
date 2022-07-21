@@ -56,7 +56,7 @@ const MainPromo: React.FC = () => {
 					<h1 className="main-promo__title">{PromoQueryText.promoTitle.value}</h1>
 					<p className="main-promo__desc">{PromoQueryText.promoDesc.value}</p>
 					<div className="main-promo__downloads">
-						<a className="main-promo__downloads-link">
+						<a className="main-promo__downloads-link" href='https://apps.apple.com/ru/app/daydrive/id1589477867' target='blank'>
 							<AppleSVG className="main-promo__downloads-link-svg" />
 							<div>
 								<p className="main-promo__downloads-link-text">Завантажити в </p>
@@ -65,7 +65,7 @@ const MainPromo: React.FC = () => {
 								</p>
 							</div>
 						</a>
-						<a className="main-promo__downloads-link">
+						<a className="main-promo__downloads-link" href='https://play.google.com/store/apps/details?id=com.goodpage.daydrive' target='blank'>
 							<PlaystoreSVG className="main-promo__downloads-link-svg" />
 							<div>
 								<p className="main-promo__downloads-link-text">Завантажити в </p>

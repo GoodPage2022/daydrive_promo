@@ -79,7 +79,7 @@ const MainAdvantage = () => {
 						</div>
 					</Tabs>
 					<div className="main-why-use__svg">
-						<Icon />
+						<Icon/>
 					</div>
 				</Container>
 
