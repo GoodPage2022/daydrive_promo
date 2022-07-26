@@ -1,0 +1,65 @@
+@import '../styles/variables.scss';
+
+@font-face {
+	font-weight: $fw-200;
+	font-family: $font-family-rubik;
+	font-style: normal;
+	src: url('/fonts/rubik/Rubik-Light.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-900;
+	font-family: $font-family-rubik;
+	font-style: normal;
+	src: url('/fonts/rubik/Rubik-ExtraBold.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-700;
+	font-family: $font-family-rubik;
+	font-style: normal;
+	src: url('/fonts/rubik/Rubik-Bold.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-500;
+	font-family: $font-family-rubik;
+	font-style: normal;
+	src: url('/fonts/rubik/Rubik-Medium.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-600;
+	font-family: $font-family-rubik;
+	font-style: normal;
+	src: url('/fonts/rubik/Rubik-SemoBold.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-400;
+	font-family: $font-family-rubik;
+	font-style: normal;
+	src: url('/fonts/rubik/Rubik-Regular.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-300;
+	font-family: $font-family-rubik;
+	font-style: normal;
+	src: url('/fonts/rubik/Rubik-Light.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: $fw-100;
+	font-family: $font-family-rubik;
+	font-style: normal;
+	src: url('/fonts/rubik/Rubik-Light.ttf');
+	font-display: swap;
+}

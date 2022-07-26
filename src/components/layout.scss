@@ -1,6 +1,7 @@
 @import '../styles/jost.scss';
 @import '../styles/exo.scss';
 @import '../styles/moshita.scss';
+@import '../styles/rubik.scss';
 @import '../styles/variables.scss';
 
 * {
@@ -16,7 +17,7 @@ body {
 	height: 100%;
 	overflow-x: hidden;
 	color: $dark-grayish-blue-color;
-	font-family: $font-family-moshita;
+	font-family: $font-family-rubik;
 	background: $light-gray-color;
 	transition: background 0.3s ease;
 	scroll-behavior: smooth;
