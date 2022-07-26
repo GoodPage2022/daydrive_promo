@@ -30,7 +30,7 @@ const TryCarousel = () => {
 	const {
 		allFile: { nodes },
 	}: MainAboutQueryTypes = useStaticQuery(MAIN_ABOUT_US_QUERY);
-	console.log(nodes);
+	
 
 	const slides = [
 		{

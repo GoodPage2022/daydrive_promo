@@ -12,8 +12,7 @@ const CarouselMobile: React.FC<CarouselProps> = ({ items }) => {
 
 	useEffect(() => {
 		const query = typeof window !== 'undefined' && window.location.search.split('=')[1];
-		console.log('query', query);
-
+		
 		switch (query) {
 			case QueryTypes.Fine:
 				setInitialSlide(0);
