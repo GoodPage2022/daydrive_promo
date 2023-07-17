@@ -21,8 +21,8 @@ const Footer: React.FC = () => {
 						))}
 					</nav>
 					<div className="footer__contacts">
-						<a href="mailto:sergey@daydrive.com.ua" className="footer__contacts-phone">
-							team@daydrive.com.ua
+						<a href="mailto:team@daydrive.ua" className="footer__contacts-phone">
+				team@daydrive.ua
 						</a>
 						<a href="tel:+380683288818" className="footer__contacts-phone">
 							+38 (068) 328 8818
