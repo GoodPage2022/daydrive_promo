@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
 						<a href="tel:+380683288818" className="footer__contacts-phone">
 							+38 (068) 328 8818
 						</a>
-						<p className="footer__contacts-address">Україна, Київ пров. Коломийський 20</p>
+						<p className="footer__contacts-address">Україна, Київ, вул Жилянська 59 «Дипломат холл»</p>
 					</div>
 					<div className="footer__downloads">
 						<a className="footer__downloads-link" href='https://apps.apple.com/ru/app/daydrive/id1589477867' target='blank'>

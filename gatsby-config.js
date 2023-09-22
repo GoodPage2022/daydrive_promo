@@ -5,8 +5,8 @@ require('dotenv').config();
 module.exports = {
 	siteMetadata: {
 		author: {
-			name: 'Bla'
-		}
+			name: 'Bla',
+		},
 	},
 	plugins: [
 		{
@@ -18,21 +18,21 @@ module.exports = {
 				background_color: '#323232',
 				theme_color: '#323232',
 				display: 'minimal-ui',
-				icon: 'src/images/promoImg.png'
-			}
+				icon: 'src/images/promoImg2.png',
+			},
 		},
 		{
 			resolve: 'gatsby-plugin-layout',
 			options: {
-				component: require.resolve('./src/components/layout.tsx')
-			}
+				component: require.resolve('./src/components/layout.tsx'),
+			},
 		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: 'src',
-				path: `${__dirname}/src`
-			}
+				path: `${__dirname}/src`,
+			},
 		},
 		{
 			resolve: '@fika/gatsby-source-cockpit',
@@ -41,28 +41,28 @@ module.exports = {
 				baseUrl: 'http://157.230.99.45:4200', // (1
 				locales: ['ua'],
 				collections: [], // (3)
-				singletons: [] // (4)
-			}
+				singletons: [], // (4)
+			},
 		},
 		{
 			resolve: 'gatsby-plugin-eslint',
 			options: {
 				test: /\.ts$|\.tsx$/,
 				exclude: /(node_modules|.cache|public|)/,
-				stages: [ 'develop' ],
+				stages: ['develop'],
 				options: {
 					emitWarning: true,
-					failOnError: true
-				}
-			}
+					failOnError: true,
+				},
+			},
 		},
 		{
 			resolve: 'gatsby-plugin-react-svg',
 			options: {
 				rule: {
-					include: /\.inline\.svg$/
-				}
-			}
+					include: /\.inline\.svg$/,
+				},
+			},
 		},
 		{
 			resolve: 'gatsby-plugin-sass',
@@ -75,12 +75,12 @@ module.exports = {
 					}
 
 					return `@import "/src/styles/variables"; ${content}`;
-				}
-			}
+				},
+			},
 		},
 		'gatsby-plugin-typescript',
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
-		'gatsby-plugin-react-helmet'
-	]
+		'gatsby-plugin-react-helmet',
+	],
 };
