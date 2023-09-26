@@ -1,0 +1,11 @@
+{
+  "applinks": {
+      "apps": [],
+      "details": [
+      {
+        "appID": "Z56C4GUVS3.goodpage.daydrive",
+        "paths": ["*"]
+      }
+    ]
+  }
+}
