@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.goodpage.daydrive",
+        "sha256_cert_fingerprints": [
+          "6C:EF:F6:32:4D:6F:4D:AD:EA:61:F0:09:38:38:F8:8F:27:E9:89:4B:1D:6F:EF:DA:7F:92:CA:B8:DF:27:03:08"
+        ]
+      }
+    }
+  ]
